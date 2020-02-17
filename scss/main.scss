@@ -149,20 +149,17 @@ main {
 }
 
 .about-info {
-  display: grid;
-  gap: 30px;
-  grid-template-areas: "job1 job2 job3";
-  grid-template-columns: repeat(1, 1fr);
-
-  .bio-image {
-    align-items: center;
-    margin-bottom: 10px;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
-  }
-
   .bio {
     font: 1.5rem;
+    text-align: center;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    text-align: justify;
+    p {
+      font-weight: 489;
+    }
   }
 
   .job-1 {
