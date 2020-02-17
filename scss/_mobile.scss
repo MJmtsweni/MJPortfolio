@@ -33,17 +33,17 @@
   }
 
   .menu-nav {
-    height: 75vh;
+    height: 70vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
 
   .menu-branding {
-    height: 25vh;
+    height: 30vh;
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url("../img/portrait_smal.jpg");
+      background: url("../img/portrait _smal.jpg");
       width: 150px;
       height: 150px;
     }
@@ -51,8 +51,6 @@
 
   .about-info {
     grid-template-areas:
-      "bioimage"
-      "bio"
       "job1"
       "job2"
       "job3";
@@ -66,10 +64,47 @@
 }
 //smartphones
 @include mediaSm {
-  main#home h1 {
-    margin-top: 10vh;
+  .menu-branding {
+    height: 29vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      background: url("../img/portrait _smal.jpg");
+      width: 150px;
+      height: 150px;
+    }
   }
-  .projects {
+
+  main#home h1 {
+    margin-top: 6vh;
+    font-size: 4rem;
+  }
+  main#about h1 {
+    margin-top: 6vh;
+    font-size: 4rem;
+  }
+  main#work h1 {
+    margin-top: 6vh;
+    font-size: 4rem;
+  }
+
+  main#contact h1 {
+    margin-top: 6vh;
+    font-size: 4rem;
+  }
+  main#contact .boxes div {
+    font-size: 18px;
+  }
+  main#about .about-info img {
+    width: 210px;
+    height: 210px;
+  }
+  main#work .projects {
     grid-template-columns: 1fr;
+  }
+  main#home .boxes div {
+    h3 {
+      font-size: 1.2rem;
+    }
   }
 }
