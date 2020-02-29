@@ -106,7 +106,7 @@ main {
     padding: 10px;
   }
   .skill-icon {
-    &:hover {
+    & a:hover {
       color: $secondary-color;
       @include easeOut;
     }

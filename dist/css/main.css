@@ -254,7 +254,7 @@ main {
   main .skills div {
     text-align: center;
     padding: 10px; }
-  main .skill-icon:hover {
+  main .skill-icon a:hover {
     color: #eece1a;
     transition: all 0.5s ease-out; }
   main .job-1 {
