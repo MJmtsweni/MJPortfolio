@@ -105,8 +105,22 @@ main {
     text-align: center;
     padding: 10px;
   }
-  .skill-icon {
-    & a:hover {
+  div.skill-iconp {
+    font-size: 570%;
+    height: 86px;
+    width: 86px;
+    border: 4px solid white;
+    border-radius: 10px;
+    margin: 30px auto 13px auto;
+    p {
+      margin-top: -45px;
+    }
+  }
+  div .job {
+    &:hover {
+      div.skill-iconp {
+        border: 4px solid $secondary-color;
+      }
       color: $secondary-color;
       @include easeOut;
     }
