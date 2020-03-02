@@ -62,8 +62,21 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 //smartphones
+@include mediaSmH {
+  main#home .boxes {
+    margin-top: -2rem;
+    div {
+      font-size: 1.2rem;
+      padding: 0.3rem 1.1rem;
+    }
+  }
+}
 @include mediaSm {
+  main#about .bio {
+    width: 250px;
+  }
   .menu-branding {
     height: 29vh;
     transform: translate3d(100%, 0, 0);
