@@ -206,6 +206,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
+    margin-left: 1rem;
     /* background: rgba(lighten($primary-color, 2), 0.1);*/ }
 
 a {
@@ -227,7 +228,8 @@ main {
   main h1 {
     margin-top: 5rem; }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    margin-left: 1rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
@@ -302,6 +304,28 @@ main {
       background: #f2aa4cff;
       border-color: #f2aa4cff;
       color: #000; }
+  main .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid; }
+  main #arrow-left {
+    border-width: 20px 25px 20px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 8px; }
+    main #arrow-left:hover {
+      border-color: transparent #f2aa4cff transparent transparent; }
+  main #arrow-right {
+    border-width: 20px 0px 20px 25px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 8px; }
+    main #arrow-right:hover {
+      border-color: transparent transparent transparent #f2aa4cff; }
 
 .about-info .bio {
   font: 1.5rem;
