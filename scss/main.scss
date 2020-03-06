@@ -78,13 +78,15 @@ main {
     div {
       font-size: 1.8rem;
       border: 3px #fff solid;
-      border-radius: 35px;
+
       padding: 0.5rem 1.5rem;
       margin-top: 4rem;
       margin-bottom: 0.1rem;
       @include easeOut;
 
       &:hover {
+        border-radius: 35px;
+        @include easeOut;
         background: $secondary-color;
         color: set-text-color($secondary-color);
         span {
@@ -149,8 +151,8 @@ main {
     color: white;
     padding: 10px 20px;
     border-radius: 4px;
-
     border-color: black;
+    margin-bottom: 3rem;
   }
 
   #mybutton {

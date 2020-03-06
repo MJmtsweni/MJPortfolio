@@ -122,7 +122,9 @@
     .menu-branding .portrait {
       background: url("../img/portrait _smal.jpg");
       width: 150px;
-      height: 150px; }
+      height: 150px;
+      margin-top: 10px;
+      margin-bottom: 10px; }
   .about-info {
     grid-template-areas: "job1" "job2" "job3";
     grid-template-columns: 1fr; }
@@ -131,7 +133,8 @@
 
 @media screen and (max-height: 510px) {
   main#home .boxes {
-    margin-top: -2rem; }
+    margin-top: -2rem;
+    margin-bottom: 0; }
     main#home .boxes div {
       font-size: 1.2rem;
       padding: 0.3rem 1.1rem; } }
@@ -166,7 +169,21 @@
   main#work .projects {
     grid-template-columns: 1fr; }
   main#home .boxes div h3 {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  main#home #arrow-left {
+    border-width: 15px 16px 15px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 8px; }
+    main#home #arrow-left:hover {
+      border-color: transparent #f2aa4cff transparent transparent; }
+  main#home #arrow-right {
+    border-width: 15px 0px 15px 16px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 8px; }
+    main#home #arrow-right:hover {
+      border-color: transparent transparent transparent #f2aa4cff; } }
 
 * {
   box-sizing: border-box; }
@@ -245,12 +262,13 @@ main {
     main .boxes div {
       font-size: 1.8rem;
       border: 3px #fff solid;
-      border-radius: 35px;
       padding: 0.5rem 1.5rem;
       margin-top: 4rem;
       margin-bottom: 0.1rem;
       transition: all 0.5s ease-out; }
       main .boxes div:hover {
+        border-radius: 35px;
+        transition: all 0.5s ease-out;
         background: #f2aa4cff;
         color: #000; }
         main .boxes div:hover span {
@@ -295,7 +313,8 @@ main {
     color: white;
     padding: 10px 20px;
     border-radius: 4px;
-    border-color: black; }
+    border-color: black;
+    margin-bottom: 3rem; }
   main #mybutton {
     position: fixed;
     bottom: -4px;
