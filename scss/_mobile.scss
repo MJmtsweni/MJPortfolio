@@ -1,24 +1,140 @@
+//4K Screens
+@include mediaK {
+  .menu-btn {
+    right: 45px;
+    top: 45px;
+    .btn-line {
+      width: 130px;
+      height: 15px;
+      margin: 0 0 13px 0;
+    }
+  }
+  main#home {
+    h1 {
+      margin-top: 18rem;
+    }
+    .lg-heading {
+      font-size: 12rem;
+    }
+    .sm-heading {
+      font-size: 4rem;
+      margin-top: -1rem;
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+    }
+    .icons {
+      margin-left: 2rem;
+      i.fa {
+        font-size: 3em;
+      }
+    }
+    .fixed-bottom {
+      bottom: 8%;
+    }
+    .tabs {
+      .tab-item {
+        i.fa {
+          font-size: 6em;
+        }
+        h3 {
+          font-size: 2.5rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
 //Widescreens
 @include mediaXl {
+  .menu-btn {
+    .btn-line {
+      width: 65px;
+      height: 7px;
+      margin: 0 0 10px 0;
+    }
+  }
+  main#home {
+    h1 {
+      margin-top: 8rem;
+    }
+    .lg-heading {
+      font-size: 7rem;
+    }
+    .sm-heading {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      padding: 0 1rem;
+    }
+    .tabs {
+      .tab-item h3 {
+        font-weight: 300;
+      }
+    }
+  }
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 //Desktops & Laptops
 @include mediaLg {
+  .menu-btn {
+    .btn-line {
+      width: 60px;
+      height: 6px;
+      margin: 0 0 7px 0;
+    }
+  }
+  main#home {
+    .sm-heading {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    .tabs {
+      .tab-item h3 {
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+    }
+  }
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 //Tablets and  small Laptops
 @include mediaMd {
-  main {
+  .menu-btn {
+    right: 20px;
+    top: 20px;
+  }
+  main#home {
     align-items: center;
     text-align: center;
 
     .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem;
+      margin-bottom: 0rem;
+      margin-top: 10vh;
+      font-size: 4.03rem;
+    }
+    .sm-heading {
+      font-size: 1.6rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+    }
+    div.icons i.fa {
+      font-size: 25px;
+    }
+    .tabs {
+      margin-top: 13rem;
+      i.fa {
+        font-size: 2em;
+      }
+      .tab-item h3 {
+        font-size: 1rem;
+        font-weight: 300;
+      }
     }
   }
   ul.menu-nav,
@@ -77,6 +193,44 @@
   }
 }
 @include mediaSm {
+  .menu-btn {
+    right: 20px;
+    top: 20px;
+    .btn-line {
+      width: 42px;
+      height: 5px;
+    }
+  }
+  main#home {
+    .lg-heading {
+      margin-top: 13vh;
+      font-size: 3rem;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+    .sm-heading {
+      font-size: 1.7rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      margin-left: 0;
+    }
+    .icons i.fa {
+      font-size: 22px;
+    }
+    .tabs {
+      margin-top: 13rem;
+      i.fa {
+        font-size: 28px;
+      }
+      a {
+        padding: 2rem;
+      }
+    }
+    .tab-item h3 {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
   main#about .bio {
     width: 250px;
   }
@@ -91,10 +245,6 @@
     }
   }
 
-  main#home h1 {
-    margin-top: 6vh;
-    font-size: 4rem;
-  }
   main#about h1 {
     margin-top: 6vh;
     font-size: 4rem;
@@ -139,6 +289,50 @@
     margin-right: 8px;
     &:hover {
       border-color: transparent transparent transparent $secondary-color;
+    }
+  }
+}
+@include mediaXs {
+  .menu-btn {
+    right: 14px;
+    top: 14px;
+    .btn-line {
+      width: 32px;
+      height: 4px;
+      margin: 0 0 4px 0;
+    }
+  }
+
+  main#home {
+    .lg-heading {
+      margin-top: 13vh;
+      font-size: 3rem;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+    .sm-heading {
+      font-size: 19px;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      margin-left: 0;
+    }
+    div.icons {
+      margin-left: 0;
+      i.fa {
+        font-size: 14px;
+      }
+    }
+    .tabs {
+      i.fa {
+        font-size: 18px;
+      }
+      a {
+        padding: 28px;
+      }
+    }
+    .tab-item h3 {
+      font-size: 12px;
+      font-weight: 300;
     }
   }
 }

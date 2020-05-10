@@ -6,8 +6,8 @@
   cursor: pointer;
   transition: all 0.5s ease-out; }
   .menu-btn .btn-line {
-    width: 30px;
-    height: 4px;
+    width: 50px;
+    height: 5px;
     margin: 0 0 5px 0;
     background: #fff;
     transition: all 0.5s ease-out; }
@@ -89,21 +89,94 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-@media screen and (min-width: 1171px) {
+@media screen and (min-width: 1645px) and (max-width: 2560px) {
+  .menu-btn {
+    right: 45px;
+    top: 45px; }
+    .menu-btn .btn-line {
+      width: 130px;
+      height: 15px;
+      margin: 0 0 13px 0; }
+  main#home h1 {
+    margin-top: 18rem; }
+  main#home .lg-heading {
+    font-size: 12rem; }
+  main#home .sm-heading {
+    font-size: 4rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem; }
+  main#home .icons {
+    margin-left: 2rem; }
+    main#home .icons i.fa {
+      font-size: 3em; }
+  main#home .fixed-bottom {
+    bottom: 8%; }
+  main#home .tabs .tab-item i.fa {
+    font-size: 6em; }
+  main#home .tabs .tab-item h3 {
+    font-size: 2.5rem;
+    font-weight: 300; } }
+
+@media screen and (min-width: 1171px) and (max-width: 1440px) {
+  .menu-btn .btn-line {
+    width: 65px;
+    height: 7px;
+    margin: 0 0 10px 0; }
+  main#home h1 {
+    margin-top: 8rem; }
+  main#home .lg-heading {
+    font-size: 7rem; }
+  main#home .sm-heading {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0 1rem; }
+  main#home .tabs .tab-item h3 {
+    font-weight: 300; }
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  .menu-btn .btn-line {
+    width: 60px;
+    height: 6px;
+    margin: 0 0 7px 0; }
+  main#home .sm-heading {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem; }
+  main#home .tabs .tab-item h3 {
+    font-size: 1.8rem;
+    font-weight: 300; }
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
-  main {
+  .menu-btn {
+    right: 20px;
+    top: 20px; }
+  main#home {
     align-items: center;
     text-align: center; }
-    main .lg-heading {
+    main#home .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 0rem;
+      margin-top: 10vh;
+      font-size: 4.03rem; }
+    main#home .sm-heading {
+      font-size: 1.6rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem; }
+    main#home div.icons i.fa {
+      font-size: 25px; }
+    main#home .tabs {
+      margin-top: 13rem; }
+      main#home .tabs i.fa {
+        font-size: 2em; }
+      main#home .tabs .tab-item h3 {
+        font-size: 1rem;
+        font-weight: 300; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -140,6 +213,33 @@
       padding: 0.3rem 1.1rem; } }
 
 @media screen and (max-width: 500px) {
+  .menu-btn {
+    right: 20px;
+    top: 20px; }
+    .menu-btn .btn-line {
+      width: 42px;
+      height: 5px; }
+  main#home .lg-heading {
+    margin-top: 13vh;
+    font-size: 3rem;
+    margin-left: 0;
+    margin-bottom: 0; }
+  main#home .sm-heading {
+    font-size: 1.7rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    margin-left: 0; }
+  main#home .icons i.fa {
+    font-size: 22px; }
+  main#home .tabs {
+    margin-top: 13rem; }
+    main#home .tabs i.fa {
+      font-size: 28px; }
+    main#home .tabs a {
+      padding: 2rem; }
+  main#home .tab-item h3 {
+    font-size: 1rem;
+    font-weight: 300; }
   main#about .bio {
     width: 250px; }
   .menu-branding {
@@ -149,9 +249,6 @@
       background: url("../img/portrait _smal.jpg");
       width: 150px;
       height: 150px; }
-  main#home h1 {
-    margin-top: 6vh;
-    font-size: 4rem; }
   main#about h1 {
     margin-top: 6vh;
     font-size: 4rem; }
@@ -185,6 +282,36 @@
     main#home #arrow-right:hover {
       border-color: transparent transparent transparent #f2aa4cff; } }
 
+@media screen and (max-width: 369px) {
+  .menu-btn {
+    right: 14px;
+    top: 14px; }
+    .menu-btn .btn-line {
+      width: 32px;
+      height: 4px;
+      margin: 0 0 4px 0; }
+  main#home .lg-heading {
+    margin-top: 13vh;
+    font-size: 3rem;
+    margin-left: 0;
+    margin-bottom: 0; }
+  main#home .sm-heading {
+    font-size: 19px;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    margin-left: 0; }
+  main#home div.icons {
+    margin-left: 0; }
+    main#home div.icons i.fa {
+      font-size: 14px; }
+  main#home .tabs i.fa {
+    font-size: 18px; }
+  main#home .tabs a {
+    padding: 28px; }
+  main#home .tab-item h3 {
+    font-size: 12px;
+    font-weight: 300; } }
+
 * {
   box-sizing: border-box; }
 
@@ -217,13 +344,16 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 6rem;
+    margin-left: 0rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    margin-left: 1rem;
+    font-size: 2rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    padding: 0.1rem 1rem;
+    margin-left: 0rem;
     /* background: rgba(lighten($primary-color, 2), 0.1);*/ }
 
 a {
@@ -235,7 +365,7 @@ header {
   z-index: 2;
   width: 100%; }
 
-.text-secondary {
+.txt-secondary {
   color: #f2aa4cff; }
 
 main {
@@ -245,11 +375,30 @@ main {
   main h1 {
     margin-top: 5rem; }
   main .icons {
-    margin-top: 1rem;
-    margin-left: 1rem; }
+    margin-top: 0rem;
+    margin-left: 0rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
+        color: #f2aa4cff;
+        transition: all 0.5s ease-out; }
+  main .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10rem; }
+    main .tabs position .tab-item {
+      float: left; }
+      main .tabs position .tab-item h3 {
+        font-weight: 400; }
+      main .tabs position .tab-item:hover h3,
+      main .tabs position .tab-item:hover a {
+        color: #f2aa4cff;
+        transition: all 0.5s ease-out; }
+    main .tabs a {
+      padding: 3rem; }
+      main .tabs a:hover {
         color: #f2aa4cff;
         transition: all 0.5s ease-out; }
   main .boxes {
@@ -308,43 +457,24 @@ main {
     padding-bottom: 1px;
     text-align: center;
     font-size: 3.4rem; }
-  main .reach-me {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
-    border-color: black;
-    margin-bottom: 3rem; }
   main #mybutton {
     position: fixed;
     bottom: -4px;
     right: 10px; }
+    main #mybutton .reach-me {
+      background-color: black;
+      color: white;
+      padding: 4px 5px;
+      border-radius: 2px;
+      border-color: black;
+      margin-bottom: 3rem; }
     main #mybutton button:hover {
       background: #f2aa4cff;
       border-color: #f2aa4cff;
-      color: #000; }
-  main .arrow {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -35px;
-    width: 0;
-    height: 0;
-    border-style: solid; }
-  main #arrow-left {
-    border-width: 20px 25px 20px 0;
-    border-color: transparent #fff transparent transparent;
-    left: 0;
-    margin-left: 8px; }
-    main #arrow-left:hover {
-      border-color: transparent #f2aa4cff transparent transparent; }
-  main #arrow-right {
-    border-width: 20px 0px 20px 25px;
-    border-color: transparent transparent transparent #fff;
-    right: 0;
-    margin-right: 8px; }
-    main #arrow-right:hover {
-      border-color: transparent transparent transparent #f2aa4cff; }
+      color: #000;
+      transition: all 0.5s ease-out; }
+  main .fixed-bottom {
+    bottom: 5%; }
 
 .about-info .bio {
   font: 1.5rem;

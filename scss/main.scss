@@ -23,11 +23,14 @@ h3 {
 
   &.lg-heading {
     font-size: 6rem;
+    margin-left: 0rem;
   }
   &.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    margin-left: 1rem;
+    font-size: 2rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    padding: 0.1rem 1rem;
+    margin-left: 0rem;
 
     /* background: rgba(lighten($primary-color, 2), 0.1);*/
   }
@@ -44,7 +47,7 @@ header {
   width: 100%;
 }
 
-.text-secondary {
+.txt-secondary {
   color: $secondary-color;
 }
 main {
@@ -55,8 +58,8 @@ main {
     margin-top: 5rem;
   }
   .icons {
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
 
     a {
       padding: 0.4rem;
@@ -66,7 +69,33 @@ main {
       }
     }
   }
-
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10rem;
+    position .tab-item {
+      float: left;
+      h3 {
+        font-weight: 400;
+      }
+      &:hover {
+        h3,
+        a {
+          color: $secondary-color;
+          @include easeOut();
+        }
+      }
+    }
+    a {
+      padding: 3rem;
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+    }
+  }
   .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -146,51 +175,29 @@ main {
     text-align: center;
     font-size: 3.4rem;
   }
-  .reach-me {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
-    border-color: black;
-    margin-bottom: 3rem;
-  }
 
   #mybutton {
     position: fixed;
     bottom: -4px;
     right: 10px;
+
+    .reach-me {
+      background-color: black;
+      color: white;
+      padding: 4px 5px;
+      border-radius: 2px;
+      border-color: black;
+      margin-bottom: 3rem;
+    }
     button:hover {
       background: $secondary-color;
       border-color: $secondary-color;
       color: set-text-color($secondary-color);
+      @include easeOut;
     }
   }
-  .arrow {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -35px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
-  #arrow-left {
-    border-width: 20px 25px 20px 0;
-    border-color: transparent #fff transparent transparent;
-    left: 0;
-    margin-left: 8px;
-    &:hover {
-      border-color: transparent $secondary-color transparent transparent;
-    }
-  }
-  #arrow-right {
-    border-width: 20px 0px 20px 25px;
-    border-color: transparent transparent transparent #fff;
-    right: 0;
-    margin-right: 8px;
-    &:hover {
-      border-color: transparent transparent transparent $secondary-color;
-    }
+  .fixed-bottom {
+    bottom: 5%;
   }
 }
 
