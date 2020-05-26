@@ -55,8 +55,7 @@
       width: 250px;
       height: 250px;
       background: url("../img/portrait.jpg");
-      border-radius: 50%;
-      border: solid 3px #f2aa4cff; }
+      border-radius: 50%; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -89,7 +88,7 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-@media screen and (min-width: 1645px) and (max-width: 2560px) {
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
   .menu-btn {
     right: 45px;
     top: 45px; }
@@ -97,6 +96,12 @@
       width: 130px;
       height: 15px;
       margin: 0 0 13px 0; }
+  .menu .nav-link {
+    font-size: 5rem;
+    padding: 2rem 0; }
+  .menu-branding .portrait {
+    width: 500px;
+    height: 500px; }
   main#home h1 {
     margin-top: 18rem; }
   main#home .lg-heading {
@@ -112,11 +117,104 @@
       font-size: 3em; }
   main#home .fixed-bottom {
     bottom: 8%; }
+  main#home .tabs a {
+    padding: 5rem; }
   main#home .tabs .tab-item i.fa {
     font-size: 6em; }
   main#home .tabs .tab-item h3 {
-    font-size: 2.5rem;
-    font-weight: 300; } }
+    font-size: 2rem;
+    font-weight: 400; }
+  main#about h1 {
+    margin-top: 13rem; }
+  main#about .lg-heading {
+    font-size: 12rem;
+    line-height: 1;
+    margin-bottom: 1rem; }
+  main#about .heading h2 {
+    font-size: 8.4rem;
+    margin-top: 8rem; }
+  main#about h3 {
+    font-size: 2rem; }
+  main#about .sm-heading {
+    font-size: 4rem;
+    margin-top: -1rem;
+    margin-bottom: 10rem;
+    margin-left: -1rem;
+    padding: 0.1rem 1rem;
+    line-height: 1; }
+  main#about .skills {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-around; }
+  main#about .about-info .bio {
+    width: 865px; }
+    main#about .about-info .bio .txt-secondary {
+      color: #f2aa4cff;
+      font-size: 2.5rem;
+      margin-bottom: -2rem;
+      margin-top: 4rem; }
+    main#about .about-info .bio p {
+      font-weight: 100;
+      font-size: 44px; }
+  main#about .skill-icon i.fab {
+    font-size: 14em; }
+  main#about .skill-icon i.fas {
+    font-size: 14em; }
+  main#about div.skill-iconp {
+    font-size: 1336%;
+    height: 209px;
+    width: 209px;
+    border: 4px solid white;
+    border-radius: 10px;
+    margin: 32px auto 13px auto; }
+    main#about div.skill-iconp p {
+      margin-top: -80px; }
+  main#about #mybutton .reach-me {
+    font-size: 3rem;
+    padding: 15px 14px; }
+  footer#main-footer {
+    padding: 0.2rem;
+    height: 80px;
+    font-size: 2rem; }
+  main#work .lg-heading {
+    font-size: 12rem;
+    line-height: 1;
+    margin-top: 20vh;
+    margin-bottom: 1rem; }
+  main#work .sm-heading {
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 12rem;
+    margin-left: -1rem;
+    padding: 0.1rem 1rem;
+    line-height: 1; }
+  main#work .heading h2 {
+    font-size: 8.4rem;
+    margin-top: 8rem; }
+  main#work .projects {
+    grid-template-columns: repeat(4, 1fr); }
+    main#work .projects .item a {
+      font-size: 2rem; }
+  main#work #mybutton .reach-me {
+    padding: 12px 11px;
+    font-size: 2rem; }
+  main#contact .lg-heading {
+    font-size: 12rem;
+    line-height: 1;
+    margin-top: 20vh;
+    margin-bottom: 1rem; }
+  main#contact .sm-heading {
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 12rem;
+    margin-left: -1rem;
+    padding: 0.1rem 1rem;
+    line-height: 1; }
+  main#contact .boxes {
+    margin-top: 15rem; }
+    main#contact .boxes div {
+      font-size: 3rem;
+      padding: 3.5rem 4.5rem; } }
 
 @media screen and (min-width: 1171px) and (max-width: 1440px) {
   .menu-btn .btn-line {
@@ -133,9 +231,47 @@
     margin-bottom: 1rem;
     padding: 0 1rem; }
   main#home .tabs .tab-item h3 {
-    font-weight: 300; }
-  .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    font-size: 1rem;
+    font-weight: 400; }
+  main#about .sm-heading {
+    font-size: 2rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    margin-left: -1rem;
+    padding: 0.1rem 1rem;
+    line-height: 1; }
+  main#about .skills {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-around; }
+  main#about .about-info .bio {
+    width: 527px; }
+    main#about .about-info .bio .txt-secondary {
+      color: #f2aa4cff;
+      font-size: 1.5rem;
+      margin-bottom: -2rem;
+      margin-top: 4rem; }
+    main#about .about-info .bio p {
+      font-weight: 100;
+      font-size: 25px; }
+  main#about #mybutton .reach-me {
+    font-size: 1.3rem; }
+  main#work .sm-heading {
+    font-size: 2rem;
+    margin-top: -1rem;
+    margin-bottom: 5rem;
+    margin-left: -1rem;
+    padding: 0.1rem 1rem;
+    line-height: 1; }
+  main#work .projects {
+    grid-template-columns: repeat(4, 1fr); }
+  main#work #mybutton .reach-me {
+    padding: 12px 11px;
+    font-size: 1rem; }
+  main#contact .boxes {
+    margin-top: 8rem; }
+  footer#main-footer {
+    font-size: 1.2rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .menu-btn .btn-line {
@@ -147,10 +283,40 @@
     margin-top: 0;
     margin-bottom: 1rem; }
   main#home .tabs .tab-item h3 {
-    font-size: 1.8rem;
-    font-weight: 300; }
-  .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    font-size: 1rem;
+    font-weight: 400; }
+  main#about .sm-heading {
+    font-size: 2rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    margin-left: -1rem;
+    padding: 0.1rem 1rem;
+    line-height: 1; }
+  main#about .skills {
+    display: flex;
+    flex-basis: 33.3%;
+    justify-content: space-around; }
+  main#about .about-info .bio {
+    width: 450px; }
+    main#about .about-info .bio .txt-secondary {
+      color: #f2aa4cff;
+      margin-bottom: -1rem;
+      margin-top: 4rem; }
+    main#about .about-info .bio p {
+      font-weight: 100;
+      font-size: 21px; }
+  main#work .sm-heading {
+    font-size: 2rem;
+    margin-top: -1rem;
+    margin-bottom: 5rem;
+    margin-left: -1rem;
+    padding: 0.1rem 1rem;
+    line-height: 1; }
+  main#work .projects {
+    grid-template-columns: repeat(3, 1fr); }
+  main#work #mybutton .reach-me {
+    padding: 8px 7px;
+    font-size: 0.9rem; } }
 
 @media screen and (max-width: 768px) {
   .menu-btn {
@@ -175,8 +341,8 @@
       main#home .tabs i.fa {
         font-size: 2em; }
       main#home .tabs .tab-item h3 {
-        font-size: 1rem;
-        font-weight: 300; }
+        font-size: 12px;
+        font-weight: 400; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -198,11 +364,47 @@
       height: 150px;
       margin-top: 10px;
       margin-bottom: 10px; }
-  .about-info {
+  main#about .lg-heading {
+    line-height: 1;
+    margin-bottom: 0rem;
+    margin-top: 10vh;
+    font-size: 4.03rem; }
+  main#about .sm-heading {
+    font-size: 1.6rem;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    margin-left: -1rem; }
+  main#about .bio h3.txt-secondary {
+    margin-bottom: -1rem; }
+  main#about .skills {
+    display: flex;
+    flex-basis: 33.3%;
+    justify-content: space-around; }
+  main#about .about-info {
     grid-template-areas: "job1" "job2" "job3";
     grid-template-columns: 1fr; }
-  .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+  main#work .lg-heading {
+    line-height: 1;
+    margin-bottom: 0rem;
+    margin-top: 10vh;
+    font-size: 4.03rem; }
+  main#work .sm-heading {
+    font-size: 1.6rem;
+    margin-top: 0.1rem;
+    margin-bottom: 4rem;
+    margin-left: -1rem; }
+  main#work .projects {
+    grid-template-columns: repeat(2, 1fr); }
+  main#contact .lg-heading {
+    line-height: 1;
+    margin-bottom: 0rem;
+    margin-top: 10vh;
+    font-size: 4.03rem; }
+  main#contact .sm-heading {
+    font-size: 1.6rem;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    margin-left: -1rem; } }
 
 @media screen and (max-height: 510px) {
   main#home .boxes {
@@ -238,10 +440,41 @@
     main#home .tabs a {
       padding: 2rem; }
   main#home .tab-item h3 {
-    font-size: 1rem;
-    font-weight: 300; }
+    font-size: 12px;
+    font-weight: 400; }
+  main#about .lg-heading {
+    margin-top: 8vh;
+    font-size: 3rem;
+    margin-left: 0;
+    margin-bottom: 0; }
+  main#about .sm-heading {
+    font-size: 1.3rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    margin-left: -1rem;
+    line-height: 1; }
   main#about .bio {
-    width: 250px; }
+    width: 315px;
+    margin-top: 2rem; }
+    main#about .bio h3.txt-secondary {
+      margin-bottom: -1rem; }
+  main#about .skills {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-around; }
+    main#about .skills .skill-icon i.fab {
+      font-size: 4em; }
+    main#about .skills .skill-icon i.fas {
+      font-size: 4em; }
+    main#about .skills div.skill-iconp {
+      font-size: 200%;
+      height: 43px;
+      width: 43px;
+      border: 4px solid white;
+      border-radius: 10px;
+      margin: 28px auto 13px auto; }
+      main#about .skills div.skill-iconp p {
+        margin-top: -19px; }
   .menu-branding {
     height: 29vh;
     transform: translate3d(100%, 0, 0); }
@@ -249,38 +482,38 @@
       background: url("../img/portrait _smal.jpg");
       width: 150px;
       height: 150px; }
-  main#about h1 {
-    margin-top: 6vh;
-    font-size: 4rem; }
-  main#work h1 {
-    margin-top: 6vh;
-    font-size: 4rem; }
-  main#contact h1 {
-    margin-top: 6vh;
-    font-size: 4rem; }
-  main#contact .boxes div {
-    font-size: 18px; }
   main#about .about-info img {
     width: 210px;
     height: 210px; }
-  main#work .projects {
-    grid-template-columns: 1fr; }
   main#home .boxes div h3 {
     font-size: 1.2rem; }
-  main#home #arrow-left {
-    border-width: 15px 16px 15px 0;
-    border-color: transparent #fff transparent transparent;
-    left: 0;
-    margin-left: 8px; }
-    main#home #arrow-left:hover {
-      border-color: transparent #f2aa4cff transparent transparent; }
-  main#home #arrow-right {
-    border-width: 15px 0px 15px 16px;
-    border-color: transparent transparent transparent #fff;
-    right: 0;
-    margin-right: 8px; }
-    main#home #arrow-right:hover {
-      border-color: transparent transparent transparent #f2aa4cff; } }
+  main#work .lg-heading {
+    margin-top: 10vh;
+    font-size: 3rem;
+    margin-left: 0;
+    margin-bottom: 8px;
+    line-height: 1; }
+  main#work .sm-heading {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    margin-left: -1rem;
+    line-height: 1; }
+  main#work .projects {
+    grid-template-columns: 1fr; }
+  main#contact .lg-heading {
+    margin-top: 8vh;
+    font-size: 3rem;
+    margin-left: 0;
+    margin-bottom: 0; }
+  main#contact .sm-heading {
+    font-size: 1.3rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    margin-left: -1rem;
+    line-height: 1.2; }
+  main#contact .boxes div {
+    font-size: 18px; } }
 
 @media screen and (max-width: 369px) {
   .menu-btn {
@@ -290,6 +523,9 @@
       width: 32px;
       height: 4px;
       margin: 0 0 4px 0; }
+  .menu .nav-link {
+    font-size: 23px;
+    padding: 1rem 0; }
   main#home .lg-heading {
     margin-top: 13vh;
     font-size: 3rem;
@@ -310,7 +546,82 @@
     padding: 28px; }
   main#home .tab-item h3 {
     font-size: 12px;
-    font-weight: 300; } }
+    font-weight: 400; }
+  main#about .lg-heading {
+    margin-top: 6vh;
+    font-size: 3rem;
+    margin-left: 0;
+    margin-bottom: 8px;
+    line-height: 1; }
+  main#about .sm-heading {
+    font-size: 18px;
+    margin-top: -5px;
+    margin-bottom: 0.1rem;
+    margin-left: -1rem;
+    line-height: 1; }
+  main#about .bio {
+    width: 198px;
+    margin-top: 2rem; }
+    main#about .bio h3.txt-secondary {
+      margin-top: 2rem;
+      margin-bottom: -1rem; }
+    main#about .bio p {
+      font-size: 13px;
+      font-weight: 300; }
+  main#about .heading h2 {
+    font-size: 3rem;
+    line-height: 1; }
+  main#about .skills {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-around; }
+    main#about .skills .skill-icon i.fab {
+      font-size: 3em; }
+    main#about .skills .skill-icon i.fas {
+      font-size: 3em; }
+    main#about .skills div.skill-iconp {
+      font-size: 200%;
+      height: 43px;
+      width: 43px;
+      border: 4px solid white;
+      border-radius: 10px;
+      margin: 13px auto 13px auto; }
+      main#about .skills div.skill-iconp p {
+        margin-top: -19px; } }
+
+@media screen and (max-width: 369px) and (max-width: 264px) {
+  main#about .skills {
+    display: block !important; } }
+
+@media screen and (max-width: 369px) {
+  main#work .lg-heading {
+    margin-top: 6vh;
+    font-size: 3rem;
+    margin-left: 0;
+    margin-bottom: 8px;
+    line-height: 1; }
+  main#work .sm-heading {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    margin-left: -1rem;
+    line-height: 1; }
+  main#contact .lg-heading {
+    margin-top: 6vh;
+    font-size: 3rem;
+    margin-left: 0;
+    margin-bottom: 8px;
+    line-height: 1; }
+  main#contact .sm-heading {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    margin-left: -1rem;
+    line-height: 1; }
+  main#contact .boxes div {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 0.5rem 0.1rem; } }
 
 * {
   box-sizing: border-box; }
@@ -353,8 +664,7 @@ h3 {
     margin-top: -1rem;
     margin-bottom: 1rem;
     padding: 0.1rem 1rem;
-    margin-left: 0rem;
-    /* background: rgba(lighten($primary-color, 2), 0.1);*/ }
+    margin-left: 0rem; }
 
 a {
   color: #fff;
@@ -387,20 +697,18 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    margin-top: 10rem; }
-    main .tabs position .tab-item {
+    margin-top: 10rem;
+    z-index: 1; }
+    main .tabs .tab-item {
       float: left; }
-      main .tabs position .tab-item h3 {
+      main .tabs .tab-item h3 {
         font-weight: 400; }
-      main .tabs position .tab-item:hover h3,
-      main .tabs position .tab-item:hover a {
+      main .tabs .tab-item:hover h3,
+      main .tabs .tab-item:hover a {
         color: #f2aa4cff;
         transition: all 0.5s ease-out; }
     main .tabs a {
       padding: 3rem; }
-      main .tabs a:hover {
-        color: #f2aa4cff;
-        transition: all 0.5s ease-out; }
   main .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -424,11 +732,6 @@ main {
           color: #000; }
         main .boxes div:hover i.fa {
           color: black; }
-  @media (min-width: 768px) {
-    main .skills {
-      display: flex;
-      flex-basis: 33.3%;
-      justify-content: space-around; } }
   main .skills div {
     text-align: center;
     padding: 10px; }
