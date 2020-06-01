@@ -164,26 +164,29 @@ main {
     font-size: 3.4rem;
   }
 
-  #mybutton {
+  .float {
     position: fixed;
-    bottom: -4px;
-    right: 10px;
+    width: 38px;
+    height: 38px;
+    bottom: 57px;
+    right: 11px;
+    background-color: #f2aa4cff;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 19px;
 
-    .reach-me {
-      background-color: black;
-      color: white;
-      padding: 4px 5px;
-      border-radius: 2px;
-      border-color: black;
-      margin-bottom: 3rem;
-    }
-    button:hover {
+    &:hover {
       background: $secondary-color;
       border-color: $secondary-color;
       color: set-text-color($secondary-color);
       @include easeOut;
     }
   }
+  .my-float {
+    margin-top: 11px;
+  }
+
   .fixed-bottom {
     bottom: 5%;
   }
