@@ -663,10 +663,13 @@
         padding: 0;
       }
     }
+    .tab-item {
+      margin-right: 1rem;
+    }
     .tab-item h3 {
       font-size: 12px;
       font-weight: 400;
-      margin-left: 1rem;
+      text-align: center;
     }
   }
   main#about {

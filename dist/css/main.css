@@ -544,10 +544,12 @@
     font-size: 18px; }
   main#home .tabs a {
     padding: 0; }
+  main#home .tab-item {
+    margin-right: 1rem; }
   main#home .tab-item h3 {
     font-size: 12px;
     font-weight: 400;
-    margin-left: 1rem; }
+    text-align: center; }
   main#about .lg-heading {
     margin-top: 6vh;
     font-size: 3rem;
