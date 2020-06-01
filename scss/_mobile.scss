@@ -660,12 +660,13 @@
         font-size: 18px;
       }
       a {
-        padding: 28px;
+        padding: 0;
       }
     }
     .tab-item h3 {
       font-size: 12px;
       font-weight: 400;
+      margin-left: 1rem;
     }
   }
   main#about {
