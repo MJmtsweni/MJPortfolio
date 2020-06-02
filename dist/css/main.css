@@ -172,6 +172,14 @@
   main#about #mybutton .reach-me {
     font-size: 3rem;
     padding: 15px 14px; }
+  main#about .float {
+    width: 88px;
+    height: 88px;
+    bottom: 62px;
+    right: 20px;
+    font-size: 44px; }
+  main#about .my-float {
+    margin-top: 24px; }
   footer#main-footer {
     padding: 0.2rem;
     height: 80px;
@@ -198,6 +206,14 @@
   main#work #mybutton .reach-me {
     padding: 12px 11px;
     font-size: 2rem; }
+  main#work .float {
+    width: 88px;
+    height: 88px;
+    bottom: 62px;
+    right: 20px;
+    font-size: 44px; }
+  main#work .my-float {
+    margin-top: 24px; }
   main#contact .lg-heading {
     font-size: 12rem;
     line-height: 1;
@@ -589,7 +605,15 @@
       border-radius: 10px;
       margin: 13px auto 13px auto; }
       main#about .skills div.skill-iconp p {
-        margin-top: -19px; } }
+        margin-top: -19px; }
+  main#about .float {
+    width: 48px;
+    height: 48px;
+    bottom: 57px;
+    right: 11px;
+    font-size: 22px; }
+  main#about .my-float {
+    margin-top: 15px; } }
 
 @media screen and (max-width: 369px) and (max-width: 264px) {
   main#about .skills {
@@ -608,6 +632,14 @@
     margin-bottom: 4rem;
     margin-left: -1rem;
     line-height: 1; }
+  main#work .float {
+    width: 48px;
+    height: 48px;
+    bottom: 57px;
+    right: 11px;
+    font-size: 22px; }
+  main#work .my-float {
+    margin-top: 15px; }
   main#contact .lg-heading {
     margin-top: 6vh;
     font-size: 3rem;
@@ -721,7 +753,7 @@ main {
     margin-bottom: -1rem; }
     main .boxes div {
       font-size: 1.8rem;
-      border: 3px #fff solid;
+      border: 2px #fff solid;
       padding: 0.5rem 1.5rem;
       margin-top: 4rem;
       margin-bottom: 0.1rem;
@@ -765,22 +797,21 @@ main {
     font-size: 3.4rem; }
   main .float {
     position: fixed;
-    width: 38px;
-    height: 38px;
-    bottom: 57px;
-    right: 11px;
+    width: 60px;
+    height: 60px;
+    bottom: 45px;
+    right: 10px;
     background-color: #f2aa4cff;
     color: #fff;
     border-radius: 50px;
     text-align: center;
-    font-size: 19px; }
+    font-size: 29px; }
     main .float:hover {
-      background: #f2aa4cff;
-      border-color: #f2aa4cff;
-      color: #000;
+      background: white;
+      color: #f2aa4cff;
       transition: all 0.5s ease-out; }
   main .my-float {
-    margin-top: 11px; }
+    margin-top: 19px; }
   main .fixed-bottom {
     bottom: 5%; }
 

@@ -120,6 +120,16 @@
       font-size: 3rem;
       padding: 15px 14px;
     }
+    .float {
+      width: 88px;
+      height: 88px;
+      bottom: 62px;
+      right: 20px;
+      font-size: 44px;
+    }
+    .my-float {
+      margin-top: 24px;
+    }
   }
   footer#main-footer {
     padding: 0.2rem;
@@ -156,6 +166,16 @@
     #mybutton .reach-me {
       padding: 12px 11px;
       font-size: 2rem;
+    }
+    .float {
+      width: 88px;
+      height: 88px;
+      bottom: 62px;
+      right: 20px;
+      font-size: 44px;
+    }
+    .my-float {
+      margin-top: 24px;
     }
   }
   main#contact {
@@ -728,6 +748,16 @@
         }
       }
     }
+    .float {
+      width: 48px;
+      height: 48px;
+      bottom: 57px;
+      right: 11px;
+      font-size: 22px;
+    }
+    .my-float {
+      margin-top: 15px;
+    }
     @media screen and (max-width: 264px) {
       .skills {
         display: block !important;
@@ -748,6 +778,16 @@
       margin-bottom: 4rem;
       margin-left: -1rem;
       line-height: 1;
+    }
+    .float {
+      width: 48px;
+      height: 48px;
+      bottom: 57px;
+      right: 11px;
+      font-size: 22px;
+    }
+    .my-float {
+      margin-top: 15px;
     }
   }
   main#contact {
