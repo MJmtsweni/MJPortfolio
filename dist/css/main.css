@@ -2,7 +2,7 @@
   position: absolute;
   z-index: 3;
   right: 35px;
-  top: 35px;
+  top: 38px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
   .menu-btn .btn-line {
@@ -61,7 +61,7 @@
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
-    .menu .nav-item.cuurent > a {
+    .menu .nav-item.current > a {
       color: #f2aa4cff; }
   .menu .nav-link {
     display: inline-block;
@@ -76,25 +76,13 @@
     .menu .nav-link:hover {
       color: #f2aa4cff; }
 
-.nav-item:nth-child(1) {
-  transition-delay: 0.1s; }
-
-.nav-item:nth-child(2) {
-  transition-delay: 0.2s; }
-
-.nav-item:nth-child(3) {
-  transition-delay: 0.3s; }
-
-.nav-item:nth-child(4) {
-  transition-delay: 0.4s; }
-
 @media screen and (min-width: 1441px) {
   .menu-btn {
     right: 45px;
-    top: 45px; }
+    top: 81px; }
     .menu-btn .btn-line {
-      width: 130px;
-      height: 15px;
+      width: 100px;
+      height: 8px;
       margin: 0 0 13px 0; }
   .menu .nav-link {
     font-size: 5rem;
@@ -102,12 +90,18 @@
   .menu-branding .portrait {
     width: 500px;
     height: 500px; }
+  .logo {
+    font-size: 6rem !important; }
   main#home h1 {
-    margin-top: 18rem; }
+    margin-top: 0rem; }
   main#home .lg-heading {
     font-size: 12rem; }
   main#home .sm-heading {
-    font-size: 4rem;
+    position: absolute;
+    bottom: 44%;
+    right: 0;
+    left: 0;
+    font-size: 5rem;
     margin-top: -1rem;
     margin-bottom: 1rem;
     margin-left: 1rem; }
@@ -124,12 +118,11 @@
   main#home .tabs .tab-item h3 {
     font-size: 2rem;
     font-weight: 400; }
-  main#about h1 {
-    margin-top: 13rem; }
   main#about .lg-heading {
     font-size: 12rem;
     line-height: 1;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    margin-top: 13rem; }
   main#about .heading h2 {
     font-size: 8.4rem;
     margin-top: 8rem; }
@@ -137,24 +130,29 @@
     font-size: 2rem; }
   main#about .sm-heading {
     font-size: 4rem;
-    margin-top: -1rem;
+    margin-top: 0rem;
     margin-bottom: 10rem;
     margin-left: -1rem;
     padding: 0.1rem 1rem;
-    line-height: 1; }
+    line-height: 1;
+    text-align: left; }
   main#about .skills {
     display: flex;
     flex-basis: 100%;
     justify-content: space-around; }
+    main#about .skills svg {
+      width: 196px;
+      height: 241px; }
+    main#about .skills h3.icon-text {
+      margin-top: -12px; }
   main#about .about-info .bio {
-    width: 865px; }
+    width: 1200px; }
     main#about .about-info .bio .txt-secondary {
       color: #f2aa4cff;
       font-size: 2.5rem;
       margin-bottom: -2rem;
       margin-top: 4rem; }
     main#about .about-info .bio p {
-      font-weight: 100;
       font-size: 44px; }
   main#about .skill-icon i.fab {
     font-size: 14em; }
@@ -195,7 +193,10 @@
     margin-bottom: 12rem;
     margin-left: -1rem;
     padding: 0.1rem 1rem;
-    line-height: 1; }
+    line-height: 1;
+    text-align: left; }
+  main#work .bio {
+    width: 65%; }
   main#work .heading h2 {
     font-size: 8.4rem;
     margin-top: 8rem; }
@@ -225,7 +226,8 @@
     margin-bottom: 12rem;
     margin-left: -1rem;
     padding: 0.1rem 1rem;
-    line-height: 1; }
+    line-height: 1;
+    text-align: left; }
   main#contact .boxes {
     margin-top: 15rem; }
     main#contact .boxes div {
@@ -234,68 +236,88 @@
 
 @media screen and (min-width: 1171px) and (max-width: 1440px) {
   .menu-btn .btn-line {
-    width: 65px;
-    height: 7px;
-    margin: 0 0 10px 0; }
-  main#home h1 {
-    margin-top: 8rem; }
+    width: 52px;
+    height: 4px;
+    margin: 0 0 7px 0; }
   main#home .lg-heading {
     font-size: 7rem; }
   main#home .sm-heading {
-    font-size: 2rem;
+    position: absolute;
+    bottom: 44%;
+    right: 0;
+    left: 0;
+    font-size: 3rem;
     margin-top: 0;
     margin-bottom: 1rem;
     padding: 0 1rem; }
   main#home .tabs .tab-item h3 {
     font-size: 1rem;
     font-weight: 400; }
+  main#about h1.lg-heading {
+    margin-top: 8rem; }
   main#about .sm-heading {
     font-size: 2rem;
-    margin-top: -1rem;
+    margin-top: 0rem;
     margin-bottom: 1rem;
     margin-left: -1rem;
     padding: 0.1rem 1rem;
-    line-height: 1; }
+    line-height: 1;
+    text-align: left; }
   main#about .skills {
     display: flex;
     flex-basis: 100%;
     justify-content: space-around; }
+    main#about .skills h3.icon-text {
+      margin-top: -14px; }
   main#about .about-info .bio {
-    width: 527px; }
+    width: 65%; }
     main#about .about-info .bio .txt-secondary {
       color: #f2aa4cff;
       font-size: 1.5rem;
       margin-bottom: -2rem;
       margin-top: 4rem; }
     main#about .about-info .bio p {
-      font-weight: 100;
       font-size: 25px; }
   main#about #mybutton .reach-me {
     font-size: 1.3rem; }
+  main#work h1.lg-heading {
+    margin-top: 8rem; }
   main#work .sm-heading {
     font-size: 2rem;
-    margin-top: -1rem;
+    margin-top: 0rem;
     margin-bottom: 5rem;
     margin-left: -1rem;
     padding: 0.1rem 1rem;
-    line-height: 1; }
+    line-height: 1;
+    text-align: left; }
   main#work .projects {
     grid-template-columns: repeat(4, 1fr); }
   main#work #mybutton .reach-me {
     padding: 12px 11px;
     font-size: 1rem; }
-  main#contact .boxes {
+  main#contact h1.lg-heading {
     margin-top: 8rem; }
+  main#contact .sm-heading {
+    text-align: left; }
   footer#main-footer {
     font-size: 1.2rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-  .menu-btn .btn-line {
-    width: 60px;
-    height: 6px;
-    margin: 0 0 7px 0; }
+  .menu-btn {
+    top: 30px; }
+    .menu-btn .btn-line {
+      width: 60px;
+      height: 6px;
+      margin: 0 0 7px 0; }
+  .logo {
+    top: 8px;
+    font-size: 3.2rem !important; }
   main#home .sm-heading {
-    font-size: 2rem;
+    position: absolute;
+    bottom: 44%;
+    right: 0;
+    left: 0;
+    font-size: 3rem;
     margin-top: 0;
     margin-bottom: 1rem; }
   main#home .tabs .tab-item h3 {
@@ -307,19 +329,21 @@
     margin-bottom: 1rem;
     margin-left: -1rem;
     padding: 0.1rem 1rem;
-    line-height: 1; }
+    line-height: 1;
+    text-align: left; }
   main#about .skills {
     display: flex;
     flex-basis: 33.3%;
     justify-content: space-around; }
+    main#about .skills h3.icon-text {
+      margin-top: -16px; }
   main#about .about-info .bio {
-    width: 450px; }
+    width: 71%; }
     main#about .about-info .bio .txt-secondary {
       color: #f2aa4cff;
       margin-bottom: -1rem;
       margin-top: 4rem; }
     main#about .about-info .bio p {
-      font-weight: 100;
       font-size: 21px; }
   main#work .sm-heading {
     font-size: 2rem;
@@ -327,17 +351,27 @@
     margin-bottom: 5rem;
     margin-left: -1rem;
     padding: 0.1rem 1rem;
-    line-height: 1; }
+    line-height: 1;
+    text-align: left; }
   main#work .projects {
     grid-template-columns: repeat(3, 1fr); }
   main#work #mybutton .reach-me {
     padding: 8px 7px;
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+  main#contact .sm-heading {
+    text-align: left; } }
 
 @media screen and (max-width: 768px) {
   .menu-btn {
     right: 20px;
-    top: 20px; }
+    top: 23px; }
+    .menu-btn .btn-line {
+      width: 40px;
+      height: 3px; }
+  h1.logo {
+    font-size: 1.8rem !important;
+    top: 10.2px;
+    left: 0.7rem; }
   main#home {
     align-items: center;
     text-align: center; }
@@ -347,7 +381,11 @@
       margin-top: 10vh;
       font-size: 4.03rem; }
     main#home .sm-heading {
-      font-size: 1.6rem;
+      position: absolute;
+      bottom: 44%;
+      right: 0;
+      left: 0;
+      font-size: 2.5rem;
       margin-top: 0.2rem;
       margin-bottom: 0.2rem; }
     main#home div.icons i.fa {
@@ -390,12 +428,16 @@
     margin-top: 0.1rem;
     margin-bottom: 1rem;
     margin-left: -1rem; }
-  main#about .bio h3.txt-secondary {
-    margin-bottom: -1rem; }
+  main#about .bio {
+    width: 431px; }
+    main#about .bio h3.txt-secondary {
+      margin-bottom: -1rem; }
   main#about .skills {
     display: flex;
     flex-basis: 33.3%;
     justify-content: space-around; }
+    main#about .skills h3.icon-text {
+      margin-top: -16px; }
   main#about .about-info {
     grid-template-areas: "job1" "job2" "job3";
     grid-template-columns: 1fr; }
@@ -411,16 +453,35 @@
     margin-left: -1rem; }
   main#work .projects {
     grid-template-columns: repeat(2, 1fr); }
-  main#contact .lg-heading {
-    line-height: 1;
-    margin-bottom: 0rem;
-    margin-top: 10vh;
-    font-size: 4.03rem; }
-  main#contact .sm-heading {
-    font-size: 1.6rem;
-    margin-top: 0.1rem;
-    margin-bottom: 1rem;
-    margin-left: -1rem; } }
+  main#contact {
+    padding-left: 1rem; }
+    main#contact .lg-heading {
+      line-height: 1;
+      margin-bottom: 0rem;
+      margin-top: 10vh;
+      font-size: 4.03rem; }
+    main#contact .sm-heading {
+      font-size: 1.6rem;
+      margin-top: 0.1rem;
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+      text-align: left; }
+    main#contact div.flex {
+      flex-direction: column;
+      padding-top: 3rem; }
+    main#contact .contact-form {
+      flex-basis: 100%; }
+      main#contact .contact-form input {
+        font-size: 1rem; }
+      main#contact .contact-form textarea {
+        font-size: 1rem;
+        width: 98%; }
+      main#contact .contact-form button[type="submit"] {
+        font-size: 1rem; }
+    main#contact .boxes {
+      flex-direction: column;
+      justify-content: center;
+      flex-basis: 100%; } }
 
 @media screen and (max-height: 510px) {
   main#home .boxes {
@@ -428,15 +489,36 @@
     margin-bottom: 0; }
     main#home .boxes div {
       font-size: 1.2rem;
-      padding: 0.3rem 1.1rem; } }
+      padding: 0.3rem 1.1rem; }
+  main#maintenance h1 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 14vh; }
+  main#maintenance img {
+    margin-top: 1rem; }
+  main#maintenance a {
+    font-size: medium;
+    margin-right: 0; }
+  main#maintenance .connect {
+    margin-top: 4rem; }
+    main#maintenance .connect a {
+      display: block;
+      line-height: 3rem; }
+  main#maintenance h4 {
+    font-size: 12px;
+    margin-top: 0; } }
 
 @media screen and (max-width: 500px) {
   .menu-btn {
     right: 20px;
-    top: 20px; }
+    top: 25px; }
     .menu-btn .btn-line {
-      width: 42px;
-      height: 5px; }
+      width: 35px;
+      height: 3px; }
+  h1.logo {
+    font-size: 1.8rem !important;
+    top: 16px;
+    left: 0.7rem; }
   main#home .lg-heading {
     margin-top: 13vh;
     font-size: 3rem;
@@ -467,7 +549,7 @@
     font-size: 1.3rem;
     margin-top: 0rem;
     margin-bottom: 1rem;
-    margin-left: -1rem;
+    margin-left: -7rem;
     line-height: 1; }
   main#about .bio {
     width: 315px;
@@ -482,15 +564,11 @@
       font-size: 4em; }
     main#about .skills .skill-icon i.fas {
       font-size: 4em; }
-    main#about .skills div.skill-iconp {
-      font-size: 200%;
-      height: 43px;
-      width: 43px;
-      border: 4px solid white;
-      border-radius: 10px;
-      margin: 28px auto 13px auto; }
-      main#about .skills div.skill-iconp p {
-        margin-top: -19px; }
+    main#about .skills .skill-icon svg {
+      width: 56px;
+      height: 69px; }
+    main#about .skills h3.icon-text {
+      margin-top: -9px; }
   .menu-branding {
     height: 29vh;
     transform: translate3d(100%, 0, 0); }
@@ -518,18 +596,56 @@
   main#work .projects {
     grid-template-columns: 1fr; }
   main#contact .lg-heading {
-    margin-top: 8vh;
+    margin-top: 12vh;
     font-size: 3rem;
     margin-left: 0;
-    margin-bottom: 0; }
+    margin-bottom: 6px; }
   main#contact .sm-heading {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-top: 0rem;
     margin-bottom: 1rem;
-    margin-left: -1rem;
-    line-height: 1.2; }
+    margin-left: 4px;
+    line-height: 1.2;
+    text-align: left; }
   main#contact .boxes div {
-    font-size: 18px; } }
+    font-size: 18px; }
+  main#contact div.flex {
+    flex-direction: column; }
+    main#contact div.flex .contact-form {
+      width: 100%; }
+      main#contact div.flex .contact-form input {
+        display: block;
+        width: 70%;
+        margin: 25px 0 25px 0;
+        font-size: 1rem; }
+      main#contact div.flex .contact-form textarea {
+        width: 100%;
+        margin-left: 0;
+        font-size: 1rem; }
+      main#contact div.flex .contact-form button[type="submit"] {
+        font-size: 1.1rem;
+        margin-left: 0; }
+    main#contact div.flex div.boxes {
+      width: 100%; }
+      main#contact div.flex div.boxes .icons.fa {
+        font-size: 1.2em; }
+  main#contact main#maintenance h1 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 14vh; }
+  main#contact main#maintenance img {
+    margin-top: 1rem; }
+  main#contact main#maintenance a {
+    font-size: medium;
+    margin-right: 0; }
+  main#contact main#maintenance .connect {
+    margin-top: 4rem; }
+    main#contact main#maintenance .connect a {
+      display: block;
+      line-height: 3rem; }
+  main#contact main#maintenance h4 {
+    font-size: 12px;
+    margin-top: 0; } }
 
 @media screen and (max-width: 369px) {
   .menu-btn {
@@ -539,6 +655,10 @@
       width: 32px;
       height: 4px;
       margin: 0 0 4px 0; }
+  h1.logo {
+    font-size: 1.8rem !important;
+    top: 6px;
+    left: 0.7rem; }
   .menu .nav-link {
     font-size: 23px;
     padding: 1rem 0; }
@@ -548,14 +668,16 @@
     margin-left: 0;
     margin-bottom: 0; }
   main#home .sm-heading {
-    font-size: 19px;
+    font-size: 1.5rem;
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
-    margin-left: 0; }
+    margin-left: 0;
+    bottom: 53%; }
   main#home div.icons {
-    margin-left: 0; }
+    margin-left: 0;
+    bottom: 46%; }
     main#home div.icons i.fa {
-      font-size: 14px; }
+      font-size: 19px; }
   main#home .tabs i.fa {
     font-size: 18px; }
   main#home .tabs a {
@@ -566,7 +688,7 @@
     font-size: 12px;
     font-weight: 400; }
   main#about .lg-heading {
-    margin-top: 6vh;
+    margin-top: 10vh;
     font-size: 3rem;
     margin-left: 0;
     margin-bottom: 8px;
@@ -575,19 +697,21 @@
     font-size: 18px;
     margin-top: -5px;
     margin-bottom: 0.1rem;
-    margin-left: -1rem;
+    margin-left: 0rem;
+    text-align: left;
     line-height: 1; }
   main#about .bio {
-    width: 198px;
+    width: 250px;
     margin-top: 2rem; }
     main#about .bio h3.txt-secondary {
-      margin-top: 2rem;
+      margin-top: 3rem;
       margin-bottom: -1rem; }
     main#about .bio p {
-      font-size: 13px;
-      font-weight: 300; }
+      font-size: 14px;
+      font-weight: 400; }
   main#about .heading h2 {
     font-size: 3rem;
+    padding-bottom: 8px;
     line-height: 1; }
   main#about .skills {
     display: flex;
@@ -597,23 +721,19 @@
       font-size: 3em; }
     main#about .skills .skill-icon i.fas {
       font-size: 3em; }
-    main#about .skills div.skill-iconp {
-      font-size: 200%;
-      height: 43px;
-      width: 43px;
-      border: 4px solid white;
-      border-radius: 10px;
-      margin: 13px auto 13px auto; }
-      main#about .skills div.skill-iconp p {
-        margin-top: -19px; }
+    main#about .skills .skill-icon svg {
+      width: 42px;
+      height: 52px; }
+    main#about .skills h3.icon-text {
+      margin-top: -9px; }
   main#about .float {
     width: 48px;
     height: 48px;
     bottom: 57px;
     right: 11px;
-    font-size: 22px; }
+    font-size: 31px; }
   main#about .my-float {
-    margin-top: 15px; } }
+    margin-top: 8px; } }
 
 @media screen and (max-width: 369px) and (max-width: 264px) {
   main#about .skills {
@@ -621,7 +741,7 @@
 
 @media screen and (max-width: 369px) {
   main#work .lg-heading {
-    margin-top: 6vh;
+    margin-top: 10vh;
     font-size: 3rem;
     margin-left: 0;
     margin-bottom: 8px;
@@ -630,18 +750,19 @@
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 4rem;
-    margin-left: -1rem;
+    margin-left: 0rem;
+    text-align: left;
     line-height: 1; }
   main#work .float {
     width: 48px;
     height: 48px;
     bottom: 57px;
     right: 11px;
-    font-size: 22px; }
+    font-size: 31px; }
   main#work .my-float {
-    margin-top: 15px; }
+    margin-top: 8px; }
   main#contact .lg-heading {
-    margin-top: 6vh;
+    margin-top: 10vh;
     font-size: 3rem;
     margin-left: 0;
     margin-bottom: 8px;
@@ -650,12 +771,30 @@
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 4rem;
-    margin-left: -1rem;
+    margin-left: 0rem;
+    text-align: left;
     line-height: 1; }
   main#contact .boxes div {
     text-align: center;
     margin-top: 3rem;
-    padding: 0.5rem 0.1rem; } }
+    padding: 0.5rem 1.1rem;
+    font-size: 15px; }
+  main#maintenance h1 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 14vh; }
+  main#maintenance img {
+    margin-top: 1rem; }
+  main#maintenance a {
+    font-size: medium;
+    margin-right: 0; }
+  main#maintenance .connect {
+    margin-top: 4rem; }
+    main#maintenance .connect a {
+      line-height: 3rem; }
+  main#maintenance h4 {
+    font-size: 12px;
+    margin-top: 0; } }
 
 * {
   box-sizing: border-box; }
@@ -686,19 +825,36 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400; }
+  h1.logo,
+  h2.logo,
+  h3.logo {
+    position: absolute;
+    font-size: 3rem;
+    margin-top: 0; }
+  h1.logo:hover,
+  h2.logo:hover,
+  h3.logo:hover {
+    color: #fff; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem;
+    font-size: 5rem;
     margin-left: 0rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     font-size: 2rem;
-    margin-top: -1rem;
-    margin-bottom: 1rem;
-    padding: 0.1rem 1rem;
-    margin-left: 0rem; }
+    margin-top: 0rem;
+    margin-bottom: 4rem;
+    padding: 0.1rem 0rem;
+    margin-left: 0rem;
+    text-align: center; }
+
+.animate {
+  color: #f2aa4cff; }
+
+span.typed-cursor {
+  color: #f2aa4cff; }
 
 a {
   color: #fff;
@@ -713,14 +869,19 @@ header {
   color: #f2aa4cff; }
 
 main {
-  padding: 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   min-height: calc(100vh - 60px);
   overflow: hidden; }
   main h1 {
     margin-top: 5rem; }
   main .icons {
+    position: absolute;
+    bottom: 36%;
+    right: 0;
+    left: 0;
     margin-top: 0rem;
-    margin-left: 0rem; }
+    margin-left: 0rem;
+    text-align: center; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
@@ -747,25 +908,24 @@ main {
   main .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
-    margin-top: 2rem;
-    margin-bottom: -1rem; }
-    main .boxes div {
-      font-size: 1.8rem;
-      border: 2px #fff solid;
+    margin-top: 5rem;
+    flex-basis: 32%; }
+    main .boxes div.connect {
+      font-size: 1.3rem;
+      border: 1px #fff solid;
       padding: 0.5rem 1.5rem;
-      margin-top: 4rem;
+      margin-top: 2rem;
       margin-bottom: 0.1rem;
       transition: all 0.5s ease-out; }
-      main .boxes div:hover {
+      main .boxes div.connect:hover {
         border-radius: 35px;
         transition: all 0.5s ease-out;
         background: #f2aa4cff;
         color: #000; }
-        main .boxes div:hover span {
+        main .boxes div.connect:hover span {
           color: #000; }
-        main .boxes div:hover i.fa {
+        main .boxes div.connect:hover i.fa {
           color: black; }
   main .skills div {
     text-align: center;
@@ -784,6 +944,12 @@ main {
     transition: all 0.5s ease-out; }
     main div .job:hover div.skill-iconp {
       border: 4px solid #f2aa4cff; }
+    main div .job:hover #Group_1 {
+      transition: all 0.5s ease-out; }
+      main div .job:hover #Group_1 .cls-1 {
+        stroke: #f2aa4cff; }
+      main div .job:hover #Group_1 .cls-2 {
+        fill: #f2aa4cff; }
   main .job-1 {
     flex: 1; }
   main .job-2 {
@@ -797,21 +963,24 @@ main {
     font-size: 3.4rem; }
   main .float {
     position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 45px;
+    width: 64px;
+    height: 64px;
+    bottom: 74px;
     right: 10px;
-    background-color: #f2aa4cff;
+    background-color: green;
     color: #fff;
     border-radius: 50px;
     text-align: center;
-    font-size: 29px; }
+    font-size: 48px; }
     main .float:hover {
       background: white;
-      color: #f2aa4cff;
+      color: green;
       transition: all 0.5s ease-out; }
   main .my-float {
-    margin-top: 19px; }
+    position: absolute;
+    left: 11px;
+    right: 11px;
+    top: 8px; }
   main .fixed-bottom {
     bottom: 5%; }
 
@@ -822,9 +991,10 @@ main {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
-  text-align: justify; }
+  text-align: start; }
   .about-info .bio p {
-    font-weight: 489; }
+    font-weight: 400;
+    line-height: 1.7; }
 
 .about-info .job-1 {
   grid-area: job1; }
@@ -851,6 +1021,26 @@ main {
     text-align: center;
     font-weight: 400; }
 
+svg {
+  width: 98px;
+  height: 121px; }
+
+#Group_1 .cls-1 {
+  fill: #101820ff;
+  stroke: #fff;
+  stroke-width: 2px; }
+
+#Group_1 .cls-2 {
+  fill: #fff;
+  font-size: 25px;
+  font-family: SegoeUI, Segoe UI; }
+
+#Group_1 .cls-3 {
+  stroke: none; }
+
+#Group_1 .cls-4 {
+  fill: none; }
+
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -863,24 +1053,67 @@ main {
       border-color: #f2aa4cff;
       transition: all 0.5s ease-out; }
 
-.boxes {
+div.flex {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem; }
-  .boxes div {
-    font-size: 2rem;
-    border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #f2aa4cff;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.contact-form {
+  float: left;
+  flex-basis: 70%; }
+  .contact-form input {
+    margin: 10px;
+    border: 0px;
+    background-color: #101820ff;
+    color: #fff;
+    border-bottom: 1.5px solid #fff;
+    font-size: 1.5rem;
+    font-weight: 200; }
+  .contact-form input[id="name"] {
+    margin-right: 2rem; }
+  .contact-form input[id="name"],
+  .contact-form input[id="email"] {
+    display: inline-block; }
+  .contact-form input[id="subject"] {
+    display: block; }
+  .contact-form textarea {
+    display: block;
+    width: 64%;
+    margin-left: 10px;
+    margin-top: 2rem;
+    padding: 10px;
+    background-color: #101820ff;
+    color: #fff;
+    border: 1.5px solid #fff;
+    font-size: 1.5rem; }
+
+main#contact .icons {
+  position: relative;
+  margin-top: 2rem; }
+  main#contact .icons .fa {
+    font-size: 1.4em; }
+
+main#contact button[type="submit"] {
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: #101820ff;
+  border: 1px #fff solid;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.1rem;
+  margin-left: 0.8rem;
+  transition: all 0.5s ease-out; }
+  main#contact button[type="submit"]:hover {
+    border-radius: 35px;
+    transition: all 0.5s ease-out;
+    background: #f2aa4cff;
+    color: #000; }
+    main#contact button[type="submit"]:hover span {
       color: #000; }
-      .boxes div:hover span {
-        color: #000; }
+    main#contact button[type="submit"]:hover i.fa {
+      color: black; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -905,3 +1138,41 @@ main {
   background: black;
   color: #fff;
   height: 60px; }
+
+main#maintenance {
+  text-align: center; }
+  main#maintenance h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-top: 25vh; }
+  main#maintenance hr {
+    margin-bottom: 2rem; }
+  main#maintenance i.fa {
+    font-size: 1.8rem; }
+  main#maintenance a {
+    font-size: larger;
+    text-decoration: underline;
+    font-weight: 400;
+    margin-right: 1rem; }
+    main#maintenance a i.fa {
+      color: #f2aa4cff; }
+    main#maintenance a:hover {
+      color: #000; }
+  @media screen and (max-width: 553px) {
+    main#maintenance h1 {
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 14vh; }
+    main#maintenance img {
+      margin-top: 1rem; }
+    main#maintenance a {
+      font-size: medium;
+      margin-right: 0; }
+    main#maintenance .connect {
+      margin-top: 4rem; }
+      main#maintenance .connect a {
+        display: block;
+        line-height: 3rem; }
+    main#maintenance h4 {
+      font-size: 12px;
+      margin-top: 0; } }

@@ -28,7 +28,7 @@
         </div>
         <ul class="menu-nav">
           <li class="nav-item current">
-            <a href="index.html" class="nav-link"> Home</a>
+            <a href="index.html" class="nav-link" > Home</a>
           </li>
           <li class="nav-item">
             <a href="about.html" class="nav-link"> About Me</a>
@@ -43,14 +43,12 @@
       </nav>
     </header>
     <main id="home">
-      <div id="slider">
-        <div class="slide slide1">
-          <div class="slide-content">
-          <h1 class="lg-heading">
-            Thabo <span class="txt-secondary">Mtsweni</span>
-          </h1>
+      <a href="index.html" ><h1 class="logo">
+        Thabo <span class="txt-secondary ">Mtsweni</span>
+      </h1></a>
           <h2 class="sm-heading">
-            Hi, I'm a Web Designer
+           Welcome to My Portfolio <br>
+           I'm a <span class="animate"></span>
           </h2>
           
           <div class="icons">
@@ -62,24 +60,18 @@
             </i></a>
            
            
-            <a href="#!"><i class="fa fa-linkedin fa-2x"></i>
+            <a href="https://www.linkedin.com/in/thabo-mtsweni/" target="_blank"><i class="fa fa-linkedin fa-2x"></i>
             </i></a>
             
           
-            <a href="#!"><i class="fa fa-github fa-2x"></i>
+            <a href="https://www.github.com/MJmtsweni" target="_blank"><i class="fa fa-github fa-2x"></i>
             </i></a>
           </div>
-       <!--   <div class="boxes">
-            <div>
-              <a href="work.html" >
-            
-               <h3> View<span class="text-secondary"> My Work</span> </h3>
-            </a>
-            </div>
-          </div> -->
+       
           <div class="tabs fixed-bottom">
             <div class = "tab-item text-center">
-            <a href="about.html"><i class="fa fa-user fa-3x text-center"><h3>ABOUT </h3></i>
+            <a href="about.html"><i class="fa fa-user fa-3x text-center" data-toggle="tootltip" data-placement="top" title="Learn more about me">
+              <h3>ABOUT </h3></i>
             </i>
             
             </a>
@@ -87,25 +79,41 @@
             
          
            <div class="tab-item text-center">
-            <a href="work.html" class="text-center"><i class="fa fa-archive fa-3x"><h3>WORK</h3></i>
+            <a href="work.html" class="text-center" data-toggle="tootltip" data-placement="top" title="View my work"><i class="fa fa-archive fa-3x"><h3>WORK</h3></i>
             </i>
           </a>
           </div>
           
            
           <div class="tab-item text-center">
-            <a href="contact.html"><i class="fa fa-envelope fa-3x"><h3>CONTACT</h3></i>
+            <a href="contact.html"><i class="fa fa-envelope fa-3x" data-toggle="tootltip" data-placement="top" title="Contact me">
+              <h3>CONTACT</h3></i>
             </i>
             </a>
             </div>
           
           </div>
-        </div>
-      </div>
+        
      
       
 
     </main>
+    <script src="js/typed.js"></script>
+    <script>
+      var typed = new Typed('.animate', {
+        strings: [
+        "User-Interface Designer",
+          "Front-end Developer"
+          
+      
+        ],
+        typeSpeed: 30,
+        backSpeed: 30,
+        loop: true
+      });
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/mian.js"></script>
   </body>
 </html>

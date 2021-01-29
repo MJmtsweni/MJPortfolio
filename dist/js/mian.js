@@ -16,7 +16,7 @@ function toggleMenu() {
     menu.classList.add("show");
     menuNav.classList.add("show");
     menuBranding.classList.add("show");
-    navItems.forEach(item => item.classList.add("show"));
+    navItems.forEach((item) => item.classList.add("show"));
 
     //set Menu State
     showMenu = true;
@@ -25,7 +25,7 @@ function toggleMenu() {
     menu.classList.remove("show");
     menuNav.classList.remove("show");
     menuBranding.classList.remove("show");
-    navItems.forEach(item => item.classList.remove("show"));
+    navItems.forEach((item) => item.classList.remove("show"));
 
     //set Menu State
     showMenu = false;
@@ -62,14 +62,14 @@ function slideRight() {
   current++;
 }
 //click left
-arrowLeft.addEventListener("click", function() {
+arrowLeft.addEventListener("click", function () {
   if (current === 0) {
     current = sliderImages.length;
   }
   slideLeft();
 });
 //click left
-arrowRight.addEventListener("click", function() {
+arrowRight.addEventListener("click", function () {
   if (current === sliderImages.length - 1) {
     current = -1;
   }

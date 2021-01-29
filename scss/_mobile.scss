@@ -2,10 +2,10 @@
 @include mediaK {
   .menu-btn {
     right: 45px;
-    top: 45px;
+    top: 81px;
     .btn-line {
-      width: 130px;
-      height: 15px;
+      width: 100px;
+      height: 8px;
       margin: 0 0 13px 0;
     }
   }
@@ -17,15 +17,23 @@
     width: 500px;
     height: 500px;
   }
+  .logo {
+    font-size: 6rem !important;
+  }
   main#home {
     h1 {
-      margin-top: 18rem;
+      margin-top: 0rem;
     }
+
     .lg-heading {
       font-size: 12rem;
     }
     .sm-heading {
-      font-size: 4rem;
+      position: absolute;
+      bottom: 44%;
+      right: 0;
+      left: 0;
+      font-size: 5rem;
       margin-top: -1rem;
       margin-bottom: 1rem;
       margin-left: 1rem;
@@ -55,13 +63,11 @@
     }
   }
   main#about {
-    h1 {
-      margin-top: 13rem;
-    }
     .lg-heading {
       font-size: 12rem;
       line-height: 1;
       margin-bottom: 1rem;
+      margin-top: 13rem;
     }
     .heading h2 {
       font-size: 8.4rem;
@@ -72,19 +78,29 @@
     }
     .sm-heading {
       font-size: 4rem;
-      margin-top: -1rem;
+      margin-top: 0rem;
       margin-bottom: 10rem;
       margin-left: -1rem;
       padding: 0.1rem 1rem;
       line-height: 1;
+      text-align: left;
     }
     .skills {
       display: flex;
       flex-basis: 100%;
       justify-content: space-around;
+
+      svg {
+        width: 196px;
+        height: 241px;
+      }
+
+      h3.icon-text {
+        margin-top: -12px;
+      }
     }
     .about-info .bio {
-      width: 865px;
+      width: 1200px;
       .txt-secondary {
         color: #f2aa4cff;
         font-size: 2.5rem;
@@ -92,7 +108,6 @@
         margin-top: 4rem;
       }
       p {
-        font-weight: 100;
         font-size: 44px;
       }
     }
@@ -150,6 +165,10 @@
       margin-left: -1rem;
       padding: 0.1rem 1rem;
       line-height: 1;
+      text-align: left;
+    }
+    .bio {
+      width: 65%;
     }
     .heading h2 {
       font-size: 8.4rem;
@@ -192,6 +211,7 @@
       margin-left: -1rem;
       padding: 0.1rem 1rem;
       line-height: 1;
+      text-align: left;
     }
     .boxes {
       margin-top: 15rem;
@@ -206,20 +226,22 @@
 @include mediaXl {
   .menu-btn {
     .btn-line {
-      width: 65px;
-      height: 7px;
-      margin: 0 0 10px 0;
+      width: 52px;
+      height: 4px;
+      margin: 0 0 7px 0;
     }
   }
+
   main#home {
-    h1 {
-      margin-top: 8rem;
-    }
     .lg-heading {
       font-size: 7rem;
     }
     .sm-heading {
-      font-size: 2rem;
+      position: absolute;
+      bottom: 44%;
+      right: 0;
+      left: 0;
+      font-size: 3rem;
       margin-top: 0;
       margin-bottom: 1rem;
       padding: 0 1rem;
@@ -232,21 +254,29 @@
     }
   }
   main#about {
+    h1.lg-heading {
+      margin-top: 8rem;
+    }
     .sm-heading {
       font-size: 2rem;
-      margin-top: -1rem;
+      margin-top: 0rem;
       margin-bottom: 1rem;
       margin-left: -1rem;
       padding: 0.1rem 1rem;
       line-height: 1;
+      text-align: left;
     }
     .skills {
       display: flex;
       flex-basis: 100%;
       justify-content: space-around;
+
+      h3.icon-text {
+        margin-top: -14px;
+      }
     }
     .about-info .bio {
-      width: 527px;
+      width: 65%;
       .txt-secondary {
         color: #f2aa4cff;
         font-size: 1.5rem;
@@ -254,7 +284,6 @@
         margin-top: 4rem;
       }
       p {
-        font-weight: 100;
         font-size: 25px;
       }
     }
@@ -263,13 +292,17 @@
     }
   }
   main#work {
+    h1.lg-heading {
+      margin-top: 8rem;
+    }
     .sm-heading {
       font-size: 2rem;
-      margin-top: -1rem;
+      margin-top: 0rem;
       margin-bottom: 5rem;
       margin-left: -1rem;
       padding: 0.1rem 1rem;
       line-height: 1;
+      text-align: left;
     }
     .projects {
       grid-template-columns: repeat(4, 1fr);
@@ -280,8 +313,11 @@
     }
   }
   main#contact {
-    .boxes {
+    h1.lg-heading {
       margin-top: 8rem;
+    }
+    .sm-heading {
+      text-align: left;
     }
   }
 
@@ -292,15 +328,24 @@
 //Desktops & Laptops
 @include mediaLg {
   .menu-btn {
+    top: 30px;
     .btn-line {
       width: 60px;
       height: 6px;
       margin: 0 0 7px 0;
     }
   }
+  .logo {
+    top: 8px;
+    font-size: 3.2rem !important;
+  }
   main#home {
     .sm-heading {
-      font-size: 2rem;
+      position: absolute;
+      bottom: 44%;
+      right: 0;
+      left: 0;
+      font-size: 3rem;
       margin-top: 0;
       margin-bottom: 1rem;
     }
@@ -319,21 +364,25 @@
       margin-left: -1rem;
       padding: 0.1rem 1rem;
       line-height: 1;
+      text-align: left;
     }
     .skills {
       display: flex;
       flex-basis: 33.3%;
       justify-content: space-around;
+
+      h3.icon-text {
+        margin-top: -16px;
+      }
     }
     .about-info .bio {
-      width: 450px;
+      width: 71%;
       .txt-secondary {
         color: #f2aa4cff;
         margin-bottom: -1rem;
         margin-top: 4rem;
       }
       p {
-        font-weight: 100;
         font-size: 21px;
       }
     }
@@ -346,6 +395,7 @@
       margin-left: -1rem;
       padding: 0.1rem 1rem;
       line-height: 1;
+      text-align: left;
     }
     .projects {
       grid-template-columns: repeat(3, 1fr);
@@ -355,13 +405,27 @@
       font-size: 0.9rem;
     }
   }
+  main#contact {
+    .sm-heading {
+      text-align: left;
+    }
+  }
 }
 
 //Tablets and  small Laptops
 @include mediaMd {
   .menu-btn {
     right: 20px;
-    top: 20px;
+    top: 23px;
+    .btn-line {
+      width: 40px;
+      height: 3px;
+    }
+  }
+  h1.logo {
+    font-size: 1.8rem !important;
+    top: 10.2px;
+    left: 0.7rem;
   }
   main#home {
     align-items: center;
@@ -374,7 +438,11 @@
       font-size: 4.03rem;
     }
     .sm-heading {
-      font-size: 1.6rem;
+      position: absolute;
+      bottom: 44%;
+      right: 0;
+      left: 0;
+      font-size: 2.5rem;
       margin-top: 0.2rem;
       margin-bottom: 0.2rem;
     }
@@ -436,6 +504,7 @@
     }
 
     .bio {
+      width: 431px;
       h3.txt-secondary {
         margin-bottom: -1rem;
       }
@@ -444,6 +513,10 @@
       display: flex;
       flex-basis: 33.3%;
       justify-content: space-around;
+
+      h3.icon-text {
+        margin-top: -16px;
+      }
     }
 
     .about-info {
@@ -473,6 +546,7 @@
     }
   }
   main#contact {
+    padding-left: 1rem;
     .lg-heading {
       line-height: 1;
       margin-bottom: 0rem;
@@ -483,12 +557,37 @@
       font-size: 1.6rem;
       margin-top: 0.1rem;
       margin-bottom: 1rem;
-      margin-left: -1rem;
+      margin-left: 1rem;
+      text-align: left;
+    }
+
+    div.flex {
+      flex-direction: column;
+      padding-top: 3rem;
+    }
+    .contact-form {
+      flex-basis: 100%;
+      input {
+        font-size: 1rem;
+      }
+      textarea {
+        font-size: 1rem;
+        width: 98%;
+      }
+      button[type="submit"] {
+        font-size: 1rem;
+      }
+    }
+    .boxes {
+      flex-direction: column;
+      justify-content: center;
+      flex-basis: 100%;
     }
   }
 }
 
 //smartphones
+//510px
 @include mediaSmH {
   main#home .boxes {
     margin-top: -2rem;
@@ -498,15 +597,46 @@
       padding: 0.3rem 1.1rem;
     }
   }
+  main#maintenance {
+    h1 {
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 14vh;
+    }
+    img {
+      margin-top: 1rem;
+    }
+    a {
+      font-size: medium;
+      margin-right: 0;
+    }
+    .connect {
+      margin-top: 4rem;
+      a {
+        display: block;
+        line-height: 3rem;
+      }
+    }
+    h4 {
+      font-size: 12px;
+      margin-top: 0;
+    }
+  }
 }
+//500px
 @include mediaSm {
   .menu-btn {
     right: 20px;
-    top: 20px;
+    top: 25px;
     .btn-line {
-      width: 42px;
-      height: 5px;
+      width: 35px;
+      height: 3px;
     }
+  }
+  h1.logo {
+    font-size: 1.8rem !important;
+    top: 16px;
+    left: 0.7rem;
   }
   main#home {
     .lg-heading {
@@ -549,7 +679,7 @@
       font-size: 1.3rem;
       margin-top: 0rem;
       margin-bottom: 1rem;
-      margin-left: -1rem;
+      margin-left: -7rem;
       line-height: 1;
     }
     .bio {
@@ -570,17 +700,13 @@
         i.fas {
           font-size: 4em;
         }
-      }
-      div.skill-iconp {
-        font-size: 200%;
-        height: 43px;
-        width: 43px;
-        border: 4px solid white;
-        border-radius: 10px;
-        margin: 28px auto 13px auto;
-        p {
-          margin-top: -19px;
+        svg {
+          width: 56px;
+          height: 69px;
         }
+      }
+      h3.icon-text {
+        margin-top: -9px;
       }
     }
   }
@@ -625,23 +751,79 @@
   }
   main#contact {
     .lg-heading {
-      margin-top: 8vh;
+      margin-top: 12vh;
       font-size: 3rem;
       margin-left: 0;
-      margin-bottom: 0;
+      margin-bottom: 6px;
     }
     .sm-heading {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin-top: 0rem;
       margin-bottom: 1rem;
-      margin-left: -1rem;
+      margin-left: 4px;
       line-height: 1.2;
+      text-align: left;
     }
     .boxes div {
       font-size: 18px;
     }
+    div.flex {
+      flex-direction: column;
+
+      .contact-form {
+        width: 100%;
+
+        input {
+          display: block;
+          width: 70%;
+          margin: 25px 0 25px 0;
+          font-size: 1rem;
+        }
+        textarea {
+          width: 100%;
+          margin-left: 0;
+          font-size: 1rem;
+        }
+        button[type="submit"] {
+          font-size: 1.1rem;
+          margin-left: 0;
+        }
+      }
+      div.boxes {
+        width: 100%;
+        .icons.fa {
+          font-size: 1.2em;
+        }
+      }
+    }
+    main#maintenance {
+      h1 {
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 14vh;
+      }
+      img {
+        margin-top: 1rem;
+      }
+      a {
+        font-size: medium;
+        margin-right: 0;
+      }
+      .connect {
+        margin-top: 4rem;
+        a {
+          display: block;
+          line-height: 3rem;
+        }
+      }
+      h4 {
+        font-size: 12px;
+        margin-top: 0;
+      }
+    }
   }
 }
+//369px
 @include mediaXs {
   .menu-btn {
     right: 14px;
@@ -651,6 +833,11 @@
       height: 4px;
       margin: 0 0 4px 0;
     }
+  }
+  h1.logo {
+    font-size: 1.8rem !important;
+    top: 6px;
+    left: 0.7rem;
   }
   .menu .nav-link {
     font-size: 23px;
@@ -664,15 +851,17 @@
       margin-bottom: 0;
     }
     .sm-heading {
-      font-size: 19px;
+      font-size: 1.5rem;
       margin-top: 0.2rem;
       margin-bottom: 0.2rem;
       margin-left: 0;
+      bottom: 53%;
     }
     div.icons {
       margin-left: 0;
+      bottom: 46%;
       i.fa {
-        font-size: 14px;
+        font-size: 19px;
       }
     }
     .tabs {
@@ -693,7 +882,7 @@
   }
   main#about {
     .lg-heading {
-      margin-top: 6vh;
+      margin-top: 10vh;
       font-size: 3rem;
       margin-left: 0;
       margin-bottom: 8px;
@@ -703,24 +892,26 @@
       font-size: 18px;
       margin-top: -5px;
       margin-bottom: 0.1rem;
-      margin-left: -1rem;
+      margin-left: 0rem;
+      text-align: left;
       line-height: 1;
     }
     .bio {
-      width: 198px;
+      width: 250px;
       margin-top: 2rem;
       h3.txt-secondary {
-        margin-top: 2rem;
+        margin-top: 3rem;
         margin-bottom: -1rem;
       }
       p {
-        font-size: 13px;
-        font-weight: 300;
+        font-size: 14px;
+        font-weight: 400;
       }
     }
 
     .heading h2 {
       font-size: 3rem;
+      padding-bottom: 8px;
       line-height: 1;
     }
 
@@ -735,17 +926,13 @@
         i.fas {
           font-size: 3em;
         }
-      }
-      div.skill-iconp {
-        font-size: 200%;
-        height: 43px;
-        width: 43px;
-        border: 4px solid white;
-        border-radius: 10px;
-        margin: 13px auto 13px auto;
-        p {
-          margin-top: -19px;
+        svg {
+          width: 42px;
+          height: 52px;
         }
+      }
+      h3.icon-text {
+        margin-top: -9px;
       }
     }
     .float {
@@ -753,10 +940,10 @@
       height: 48px;
       bottom: 57px;
       right: 11px;
-      font-size: 22px;
+      font-size: 31px;
     }
     .my-float {
-      margin-top: 15px;
+      margin-top: 8px;
     }
     @media screen and (max-width: 264px) {
       .skills {
@@ -766,7 +953,7 @@
   }
   main#work {
     .lg-heading {
-      margin-top: 6vh;
+      margin-top: 10vh;
       font-size: 3rem;
       margin-left: 0;
       margin-bottom: 8px;
@@ -776,7 +963,8 @@
       font-size: 18px;
       margin-top: 0;
       margin-bottom: 4rem;
-      margin-left: -1rem;
+      margin-left: 0rem;
+      text-align: left;
       line-height: 1;
     }
     .float {
@@ -784,15 +972,15 @@
       height: 48px;
       bottom: 57px;
       right: 11px;
-      font-size: 22px;
+      font-size: 31px;
     }
     .my-float {
-      margin-top: 15px;
+      margin-top: 8px;
     }
   }
   main#contact {
     .lg-heading {
-      margin-top: 6vh;
+      margin-top: 10vh;
       font-size: 3rem;
       margin-left: 0;
       margin-bottom: 8px;
@@ -802,13 +990,39 @@
       font-size: 18px;
       margin-top: 0;
       margin-bottom: 4rem;
-      margin-left: -1rem;
+      margin-left: 0rem;
+      text-align: left;
       line-height: 1;
     }
     .boxes div {
       text-align: center;
       margin-top: 3rem;
-      padding: 0.5rem 0.1rem;
+      padding: 0.5rem 1.1rem;
+      font-size: 15px;
+    }
+  }
+  main#maintenance {
+    h1 {
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 14vh;
+    }
+    img {
+      margin-top: 1rem;
+    }
+    a {
+      font-size: medium;
+      margin-right: 0;
+    }
+    .connect {
+      margin-top: 4rem;
+      a {
+        line-height: 3rem;
+      }
+    }
+    h4 {
+      font-size: 12px;
+      margin-top: 0;
     }
   }
 }

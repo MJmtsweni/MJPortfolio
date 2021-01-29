@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="33" viewBox="0 0 24 33">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #101820;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 25px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-129 -46)">
+    <g id="Rectangle_1" data-name="Rectangle 1" class="cls-1" transform="translate(129 52)">
+      <rect class="cls-3" width="24" height="24" rx="4"/>
+      <rect class="cls-4" x="1" y="1" width="22" height="22" rx="3"/>
+    </g>
+    <text id="B" class="cls-2" transform="translate(134 73)"><tspan x="0" y="0">B</tspan></text>
+  </g>
+</svg>
