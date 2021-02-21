@@ -319,6 +319,42 @@
     .sm-heading {
       text-align: left;
     }
+
+    .contact-form {
+      flex-basis: 60%;
+      margin-right: 3rem;
+
+      i.fa {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1.8rem;
+        margin-top: 0.5rem;
+      }
+
+      textarea {
+        width: 81%;
+        height: 220px;
+        font-size: 1.8rem;
+      }
+    }
+    .boxes {
+      margin-top: 3rem;
+
+      .connect {
+        font-size: 1.5rem;
+        padding: 0.5rem 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .icons {
+        margin-top: 1rem;
+
+        i.fa {
+          font-size: 1.7rem;
+        }
+      }
+    }
   }
 
   footer#main-footer {
@@ -406,13 +442,50 @@
     }
   }
   main#contact {
+    padding: 1rem 0.5rem 2rem 0.5rem;
+
+    .lg-heading {
+      margin-left: 1rem;
+    }
     .sm-heading {
+      margin-left: 2rem;
       text-align: left;
+    }
+
+    .contact-form {
+      flex-basis: 60%;
+      margin-right: 2rem;
+
+      i.fa {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1.8rem;
+        margin-top: 0.5rem;
+      }
+
+      textarea {
+        width: 92%;
+        height: 190px;
+      }
+    }
+    .boxes {
+      margin-top: 3rem;
+
+      .connect {
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem;
+        margin-top: 0.8rem;
+      }
+
+      .icons {
+        margin-top: 1rem;
+      }
     }
   }
 }
 
-//Tablets and  small Laptops
+//Tablets and  small Laptops (768px
 @include mediaMd {
   .menu-btn {
     right: 20px;
@@ -500,7 +573,8 @@
       font-size: 1.6rem;
       margin-top: 0.1rem;
       margin-bottom: 1rem;
-      margin-left: -1rem;
+      margin-left: 0rem;
+      text-align: left;
     }
 
     .bio {
@@ -539,14 +613,14 @@
       font-size: 1.6rem;
       margin-top: 0.1rem;
       margin-bottom: 4rem;
-      margin-left: -1rem;
+      margin-left: 0rem;
+      text-align: left;
     }
     .projects {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   main#contact {
-    padding-left: 1rem;
     .lg-heading {
       line-height: 1;
       margin-bottom: 0rem;
@@ -567,6 +641,12 @@
     }
     .contact-form {
       flex-basis: 100%;
+      i.fa {
+        display: block;
+        text-align: center;
+        font-size: 1.7rem;
+        margin: 0.1rem 0 1.5rem 0;
+      }
       input {
         font-size: 1rem;
       }
@@ -679,7 +759,8 @@
       font-size: 1.3rem;
       margin-top: 0rem;
       margin-bottom: 1rem;
-      margin-left: -7rem;
+      margin-left: 0;
+      text-align: left;
       line-height: 1;
     }
     .bio {
@@ -742,7 +823,8 @@
       font-size: 1.3rem;
       margin-top: 0;
       margin-bottom: 4rem;
-      margin-left: -1rem;
+      margin-left: 0rem;
+      text-align: left;
       line-height: 1;
     }
     .projects {
@@ -750,6 +832,7 @@
     }
   }
   main#contact {
+    padding: 1rem 2rem 2rem 2rem;
     .lg-heading {
       margin-top: 12vh;
       font-size: 3rem;
@@ -772,7 +855,10 @@
 
       .contact-form {
         width: 100%;
-
+        text-align: center;
+        i.fa {
+          font-size: 1.5rem;
+        }
         input {
           display: block;
           width: 70%;
@@ -786,11 +872,12 @@
         }
         button[type="submit"] {
           font-size: 1.1rem;
-          margin-left: 0;
+          margin-bottom: 1rem;
         }
       }
       div.boxes {
         width: 100%;
+        margin-top: 3rem;
         .icons.fa {
           font-size: 1.2em;
         }
@@ -827,7 +914,7 @@
 @include mediaXs {
   .menu-btn {
     right: 14px;
-    top: 14px;
+    top: 19px;
     .btn-line {
       width: 32px;
       height: 4px;
@@ -843,6 +930,19 @@
     font-size: 23px;
     padding: 1rem 0;
   }
+  main {
+    .float {
+      width: 48px !important;
+      height: 48px !important;
+      bottom: 57px !important;
+      right: 11px !important;
+      font-size: 31px !important;
+    }
+    .my-float {
+      margin-top: 1px !important;
+      top: 7.4px !important;
+    }
+  }
   main#home {
     .lg-heading {
       margin-top: 13vh;
@@ -851,7 +951,7 @@
       margin-bottom: 0;
     }
     .sm-heading {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       margin-top: 0.2rem;
       margin-bottom: 0.2rem;
       margin-left: 0;
@@ -882,8 +982,8 @@
   }
   main#about {
     .lg-heading {
-      margin-top: 10vh;
-      font-size: 3rem;
+      margin-top: 14vh;
+      font-size: 2.8rem;
       margin-left: 0;
       margin-bottom: 8px;
       line-height: 1;
@@ -935,16 +1035,7 @@
         margin-top: -9px;
       }
     }
-    .float {
-      width: 48px;
-      height: 48px;
-      bottom: 57px;
-      right: 11px;
-      font-size: 31px;
-    }
-    .my-float {
-      margin-top: 8px;
-    }
+
     @media screen and (max-width: 264px) {
       .skills {
         display: block !important;
@@ -967,6 +1058,9 @@
       text-align: left;
       line-height: 1;
     }
+    .overlay p {
+      font-size: 0.9rem;
+    }
     .float {
       width: 48px;
       height: 48px;
@@ -979,6 +1073,7 @@
     }
   }
   main#contact {
+    padding: 1rem 1.5rem 2rem 1.5rem;
     .lg-heading {
       margin-top: 10vh;
       font-size: 3rem;
@@ -999,6 +1094,14 @@
       margin-top: 3rem;
       padding: 0.5rem 1.1rem;
       font-size: 15px;
+      margin-top: 2rem;
+    }
+    .contact-form {
+      i.fa {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+      }
     }
   }
   main#maintenance {

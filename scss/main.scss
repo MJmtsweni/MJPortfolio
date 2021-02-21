@@ -304,14 +304,48 @@ svg {
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
 
-  img {
-    width: 100%;
-    border: 3px #fff solid;
+  div.item {
+    position: relative;
+    img {
+      width: 100%;
+      height: 61.4%;
+      border: 3px #fff solid;
 
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
+      &:hover {
+        opacity: 0.5;
+        border-color: $secondary-color;
+        @include easeOut;
+      }
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 61.4%;
+      width: 100%;
+      opacity: 0;
       @include easeOut;
+      background-color: $secondary-color;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      p {
+        color: #fff;
+        font-size: 1rem;
+        position: absolute;
+        top: 20%;
+        left: 0;
+        right: 0;
+        @include easeOut;
+        text-align: center;
+      }
+    }
+    &:hover {
+      opacity: 1;
     }
   }
 }
@@ -326,6 +360,9 @@ div.flex {
 .contact-form {
   float: left;
   flex-basis: 70%;
+  border: 1.5px solid #fff !important;
+  padding: 13px;
+
   input {
     margin: 10px;
     border: 0px;
