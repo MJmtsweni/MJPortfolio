@@ -2,7 +2,7 @@
 @include mediaK {
   .menu-btn {
     right: 45px;
-    top: 81px;
+    top: 44px;
     .btn-line {
       width: 100px;
       height: 8px;
@@ -213,11 +213,43 @@
       line-height: 1;
       text-align: left;
     }
-    .boxes {
-      margin-top: 15rem;
-      div {
+    .contact-form {
+      button {
+        font-size: 2.5rem !important;
+        padding: 1.8rem !important;
+        margin-top: 3rem !important;
+        margin-left: 3rem !important;
+
+        i.fa {
+          padding-right: 0.9rem;
+        }
+      }
+      input {
+        margin: 3rem;
+        padding: 1rem;
         font-size: 3rem;
-        padding: 3.5rem 4.5rem;
+      }
+      textarea {
+        width: 81%;
+        height: 31rem;
+        font-size: 2.5rem;
+        margin-left: 3rem;
+        margin-top: 5rem;
+        padding: 1.5rem;
+      }
+    }
+    .boxes {
+      margin-top: 0rem;
+      div {
+        font-size: 2.5rem;
+        padding: 1.5rem 2.5rem;
+      }
+    }
+    .icons {
+      margin-left: -3rem;
+      margin-top: 1rem;
+      a {
+        font-size: 2rem;
       }
     }
   }
@@ -225,6 +257,7 @@
 //Widescreens
 @include mediaXl {
   .menu-btn {
+    top: 33px;
     .btn-line {
       width: 52px;
       height: 4px;
@@ -321,39 +354,51 @@
     }
 
     .contact-form {
-      flex-basis: 60%;
+      flex-basis: 45%;
+      padding-top: 2rem;
       margin-right: 3rem;
-
+      text-align: center;
       i.fa {
-        display: block;
+        display: inline-block;
         text-align: center;
         font-size: 2rem;
         margin-bottom: 1.8rem;
         margin-top: 0.5rem;
       }
 
+      input {
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      input[id="name"] {
+        margin-right: 15px;
+      }
+
       textarea {
-        width: 81%;
-        height: 220px;
-        font-size: 1.8rem;
-      }
-    }
-    .boxes {
-      margin-top: 3rem;
-
-      .connect {
-        font-size: 1.5rem;
-        padding: 0.5rem 0.5rem;
-        margin-top: 1rem;
+        width: 79%;
+        font-size: 1rem;
+        margin: auto;
       }
 
-      .icons {
-        margin-top: 1rem;
+      button[type="submit"] {
+        font-size: 1rem;
+        padding: 0.8rem;
+        margin-top: 2rem;
+        margin-left: 0.6rem;
 
         i.fa {
-          font-size: 1.7rem;
+          font-size: 1rem;
+          padding-right: 0.5rem;
+          margin: 0;
         }
       }
+    }
+
+    .boxes {
+      margin-top: 0;
+      justify-content: center;
     }
   }
 
@@ -374,6 +419,9 @@
   .logo {
     top: 8px;
     font-size: 3.2rem !important;
+  }
+  h1.lg-heading {
+    font-size: 4.5rem;
   }
   main#home {
     .sm-heading {
@@ -448,38 +496,64 @@
       margin-left: 1rem;
     }
     .sm-heading {
-      margin-left: 2rem;
+      margin-left: 1.5rem;
+      margin-top: -1rem;
       text-align: left;
     }
 
     .contact-form {
       flex-basis: 60%;
-      margin-right: 2rem;
-
-      i.fa {
-        display: block;
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 1.8rem;
-        margin-top: 0.5rem;
+      text-align: center;
+      margin-right: 1rem;
+      padding-top: 1.5rem;
+      input {
+        display: inline-block;
+        margin: auto;
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+        width: 45%;
+        padding: 0.4rem;
+        border: 1.5px solid #767676;
+      }
+      input[id="name"] {
+        margin-right: 10px;
+      }
+      button[type="submit"] {
+        font-size: 1rem;
+        padding: 0.4rem;
+        margin-left: 0.6rem;
+        i.fa {
+          display: inline-block;
+          text-align: center;
+          font-size: 1rem;
+          padding-right: 0.3rem;
+          margin: 0;
+        }
       }
 
       textarea {
-        width: 92%;
+        width: 90%;
         height: 190px;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        margin: auto;
       }
     }
     .boxes {
-      margin-top: 3rem;
-
+      justify-content: center;
+      margin-top: auto;
+      margin-left: 0.5rem;
       .connect {
-        font-size: 1rem;
-        padding: 0.5rem 0.5rem;
+        font-size: 0.8rem;
+        padding: 0.5rem 0.4rem;
         margin-top: 0.8rem;
       }
 
       .icons {
         margin-top: 1rem;
+        .fa {
+          font-size: 1.2em;
+        }
       }
     }
   }
@@ -489,9 +563,9 @@
 @include mediaMd {
   .menu-btn {
     right: 20px;
-    top: 23px;
+    top: 1.4rem;
     .btn-line {
-      width: 40px;
+      width: 35px;
       height: 3px;
     }
   }
@@ -621,6 +695,7 @@
     }
   }
   main#contact {
+    padding: 1rem 1rem 2rem 1rem;
     .lg-heading {
       line-height: 1;
       margin-bottom: 0rem;
@@ -630,38 +705,72 @@
     .sm-heading {
       font-size: 1.6rem;
       margin-top: 0.1rem;
-      margin-bottom: 1rem;
-      margin-left: 1rem;
+      margin-bottom: 1.6rem;
+      margin-left: 0.5rem;
       text-align: left;
     }
 
     div.flex {
       flex-direction: column;
-      padding-top: 3rem;
-    }
-    .contact-form {
-      flex-basis: 100%;
-      i.fa {
-        display: block;
+
+      padding-top: 1rem;
+
+      .contact-form {
+        width: 85%;
+        padding: 1.5rem 12px 12px 12px;
         text-align: center;
-        font-size: 1.7rem;
-        margin: 0.1rem 0 1.5rem 0;
+        i.fa {
+          display: inline-block;
+          text-align: center;
+          font-size: 1.7rem;
+          margin: 0.1rem 0 1.5rem 0;
+        }
+        input {
+          display: inline-block;
+          font-size: 0.9rem;
+          padding: 0.3rem;
+          width: 42%;
+          margin: auto;
+          margin-bottom: 14px;
+        }
+        input[id="name"] {
+          margin-right: 1rem;
+        }
+        textarea {
+          font-size: 0.9rem;
+          width: 88%;
+          margin: auto;
+
+          margin-top: 0rem;
+        }
+        button[type="submit"] {
+          font-size: 0.9rem;
+          margin-left: 0;
+          i.fa {
+            font-size: 0.9rem;
+            padding-right: 0.2rem;
+            margin: 0;
+          }
+        }
       }
-      input {
-        font-size: 1rem;
+      .boxes {
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 60%;
+        margin-left: 0.4rem;
+        margin-top: 0.6rem;
+        div.connect {
+          font-size: 0.8rem;
+          padding: 0.5rem 0.7rem;
+          margin-top: 1rem;
+        }
+        div.icons {
+          margin-top: 1rem;
+          i.fa {
+            font-size: 1em;
+          }
+        }
       }
-      textarea {
-        font-size: 1rem;
-        width: 98%;
-      }
-      button[type="submit"] {
-        font-size: 1rem;
-      }
-    }
-    .boxes {
-      flex-direction: column;
-      justify-content: center;
-      flex-basis: 100%;
     }
   }
 }
@@ -832,7 +941,7 @@
     }
   }
   main#contact {
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 1rem 0.8rem 2rem 0.8rem;
     .lg-heading {
       margin-top: 12vh;
       font-size: 3rem;
@@ -852,32 +961,42 @@
     }
     div.flex {
       flex-direction: column;
-
+      padding-top: 2rem;
       .contact-form {
         width: 100%;
         text-align: center;
+        padding: 1px;
+        padding: 1rem;
         i.fa {
-          font-size: 1.5rem;
+          font-size: 1rem;
         }
         input {
-          display: block;
-          width: 70%;
-          margin: 25px 0 25px 0;
-          font-size: 1rem;
+          display: inline-block;
+          width: 47%;
+          margin: auto;
+          margin-bottom: 1rem;
+          font-size: 0.8rem;
+          padding: 0.3rem;
         }
         textarea {
-          width: 100%;
-          margin-left: 0;
-          font-size: 1rem;
+          width: 95%;
+          margin: auto;
+          font-size: 0.9rem;
         }
         button[type="submit"] {
-          font-size: 1.1rem;
-          margin-bottom: 1rem;
+          font-size: 0.8rem;
+          margin-left: 0;
         }
       }
       div.boxes {
         width: 100%;
-        margin-top: 3rem;
+        margin-top: 1rem;
+        .connect {
+          font-size: 0.8rem;
+          a {
+            display: block;
+          }
+        }
         .icons.fa {
           font-size: 1.2em;
         }
@@ -896,13 +1015,7 @@
         font-size: medium;
         margin-right: 0;
       }
-      .connect {
-        margin-top: 4rem;
-        a {
-          display: block;
-          line-height: 3rem;
-        }
-      }
+
       h4 {
         font-size: 12px;
         margin-top: 0;
@@ -914,10 +1027,10 @@
 @include mediaXs {
   .menu-btn {
     right: 14px;
-    top: 19px;
+    top: 20px;
     .btn-line {
       width: 32px;
-      height: 4px;
+      height: 3px;
       margin: 0 0 4px 0;
     }
   }
@@ -1075,32 +1188,63 @@
   main#contact {
     padding: 1rem 1.5rem 2rem 1.5rem;
     .lg-heading {
-      margin-top: 10vh;
+      margin-top: 12vh;
       font-size: 3rem;
       margin-left: 0;
       margin-bottom: 8px;
       line-height: 1;
     }
     .sm-heading {
-      font-size: 18px;
+      font-size: 17px;
       margin-top: 0;
-      margin-bottom: 4rem;
-      margin-left: 0rem;
+      margin-bottom: 1rem;
+      margin-left: 6px;
       text-align: left;
       line-height: 1;
     }
-    .boxes div {
-      text-align: center;
-      margin-top: 3rem;
-      padding: 0.5rem 1.1rem;
-      font-size: 15px;
-      margin-top: 2rem;
-    }
-    .contact-form {
-      i.fa {
-        display: block;
+
+    div.flex {
+      .contact-form {
+        padding: 8px;
+        i.fa {
+          display: inline-block;
+          text-align: center;
+          font-size: 1rem;
+        }
+        button[type="submit"] {
+          font-size: 0.8rem;
+          margin-bottom: 0;
+          padding: 0.6rem;
+        }
+        input {
+          display: inline-block;
+          width: 90%;
+          margin: 10px 0 !important;
+          padding: 0.5rem;
+          font-size: 0.87rem;
+        }
+        textarea {
+          width: 91%;
+          margin-top: 1rem;
+          margin-left: 10px;
+          padding: 8px;
+          font-size: 0.98;
+        }
+      }
+      div.boxes {
         text-align: center;
-        font-size: 1.5rem;
+        margin-top: 2rem;
+        font-size: 13px;
+
+        div.connect {
+          font-size: 13px;
+          margin-top: 1rem;
+        }
+        div.icons {
+          i.fa {
+            font-size: 15px;
+          }
+        }
       }
     }
   }

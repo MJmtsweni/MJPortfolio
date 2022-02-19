@@ -79,7 +79,7 @@
 @media screen and (min-width: 1441px) {
   .menu-btn {
     right: 45px;
-    top: 81px; }
+    top: 44px; }
     .menu-btn .btn-line {
       width: 100px;
       height: 8px;
@@ -228,17 +228,42 @@
     padding: 0.1rem 1rem;
     line-height: 1;
     text-align: left; }
+  main#contact .contact-form button {
+    font-size: 2.5rem !important;
+    padding: 1.8rem !important;
+    margin-top: 3rem !important;
+    margin-left: 3rem !important; }
+    main#contact .contact-form button i.fa {
+      padding-right: 0.9rem; }
+  main#contact .contact-form input {
+    margin: 3rem;
+    padding: 1rem;
+    font-size: 3rem; }
+  main#contact .contact-form textarea {
+    width: 81%;
+    height: 31rem;
+    font-size: 2.5rem;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    padding: 1.5rem; }
   main#contact .boxes {
-    margin-top: 15rem; }
+    margin-top: 0rem; }
     main#contact .boxes div {
-      font-size: 3rem;
-      padding: 3.5rem 4.5rem; } }
+      font-size: 2.5rem;
+      padding: 1.5rem 2.5rem; }
+  main#contact .icons {
+    margin-left: -3rem;
+    margin-top: 1rem; }
+    main#contact .icons a {
+      font-size: 2rem; } }
 
 @media screen and (min-width: 1171px) and (max-width: 1440px) {
-  .menu-btn .btn-line {
-    width: 52px;
-    height: 4px;
-    margin: 0 0 7px 0; }
+  .menu-btn {
+    top: 33px; }
+    .menu-btn .btn-line {
+      width: 52px;
+      height: 4px;
+      margin: 0 0 7px 0; }
   main#home .lg-heading {
     font-size: 7rem; }
   main#home .sm-heading {
@@ -300,28 +325,39 @@
   main#contact .sm-heading {
     text-align: left; }
   main#contact .contact-form {
-    flex-basis: 60%;
-    margin-right: 3rem; }
+    flex-basis: 45%;
+    padding-top: 2rem;
+    margin-right: 3rem;
+    text-align: center; }
     main#contact .contact-form i.fa {
-      display: block;
+      display: inline-block;
       text-align: center;
       font-size: 2rem;
       margin-bottom: 1.8rem;
       margin-top: 0.5rem; }
+    main#contact .contact-form input {
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin: auto;
+      margin-bottom: 20px; }
+    main#contact .contact-form input[id="name"] {
+      margin-right: 15px; }
     main#contact .contact-form textarea {
-      width: 81%;
-      height: 220px;
-      font-size: 1.8rem; }
+      width: 79%;
+      font-size: 1rem;
+      margin: auto; }
+    main#contact .contact-form button[type="submit"] {
+      font-size: 1rem;
+      padding: 0.8rem;
+      margin-top: 2rem;
+      margin-left: 0.6rem; }
+      main#contact .contact-form button[type="submit"] i.fa {
+        font-size: 1rem;
+        padding-right: 0.5rem;
+        margin: 0; }
   main#contact .boxes {
-    margin-top: 3rem; }
-    main#contact .boxes .connect {
-      font-size: 1.5rem;
-      padding: 0.5rem 0.5rem;
-      margin-top: 1rem; }
-    main#contact .boxes .icons {
-      margin-top: 1rem; }
-      main#contact .boxes .icons i.fa {
-        font-size: 1.7rem; }
+    margin-top: 0;
+    justify-content: center; }
   footer#main-footer {
     font-size: 1.2rem; } }
 
@@ -335,6 +371,8 @@
   .logo {
     top: 8px;
     font-size: 3.2rem !important; }
+  h1.lg-heading {
+    font-size: 4.5rem; }
   main#home .sm-heading {
     position: absolute;
     bottom: 44%;
@@ -386,35 +424,59 @@
     main#contact .lg-heading {
       margin-left: 1rem; }
     main#contact .sm-heading {
-      margin-left: 2rem;
+      margin-left: 1.5rem;
+      margin-top: -1rem;
       text-align: left; }
     main#contact .contact-form {
       flex-basis: 60%;
-      margin-right: 2rem; }
-      main#contact .contact-form i.fa {
-        display: block;
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 1.8rem;
-        margin-top: 0.5rem; }
-      main#contact .contact-form textarea {
-        width: 92%;
-        height: 190px; }
-    main#contact .boxes {
-      margin-top: 3rem; }
-      main#contact .boxes .connect {
+      text-align: center;
+      margin-right: 1rem;
+      padding-top: 1.5rem; }
+      main#contact .contact-form input {
+        display: inline-block;
+        margin: auto;
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+        width: 45%;
+        padding: 0.4rem;
+        border: 1.5px solid #767676; }
+      main#contact .contact-form input[id="name"] {
+        margin-right: 10px; }
+      main#contact .contact-form button[type="submit"] {
         font-size: 1rem;
-        padding: 0.5rem 0.5rem;
+        padding: 0.4rem;
+        margin-left: 0.6rem; }
+        main#contact .contact-form button[type="submit"] i.fa {
+          display: inline-block;
+          text-align: center;
+          font-size: 1rem;
+          padding-right: 0.3rem;
+          margin: 0; }
+      main#contact .contact-form textarea {
+        width: 90%;
+        height: 190px;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        margin: auto; }
+    main#contact .boxes {
+      justify-content: center;
+      margin-top: auto;
+      margin-left: 0.5rem; }
+      main#contact .boxes .connect {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.4rem;
         margin-top: 0.8rem; }
       main#contact .boxes .icons {
-        margin-top: 1rem; } }
+        margin-top: 1rem; }
+        main#contact .boxes .icons .fa {
+          font-size: 1.2em; } }
 
 @media screen and (max-width: 768px) {
   .menu-btn {
     right: 20px;
-    top: 23px; }
+    top: 1.4rem; }
     .menu-btn .btn-line {
-      width: 40px;
+      width: 35px;
       height: 3px; }
   h1.logo {
     font-size: 1.8rem !important;
@@ -503,38 +565,66 @@
     text-align: left; }
   main#work .projects {
     grid-template-columns: repeat(2, 1fr); }
-  main#contact .lg-heading {
-    line-height: 1;
-    margin-bottom: 0rem;
-    margin-top: 10vh;
-    font-size: 4.03rem; }
-  main#contact .sm-heading {
-    font-size: 1.6rem;
-    margin-top: 0.1rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    text-align: left; }
-  main#contact div.flex {
-    flex-direction: column;
-    padding-top: 3rem; }
-  main#contact .contact-form {
-    flex-basis: 100%; }
-    main#contact .contact-form i.fa {
-      display: block;
-      text-align: center;
-      font-size: 1.7rem;
-      margin: 0.1rem 0 1.5rem 0; }
-    main#contact .contact-form input {
-      font-size: 1rem; }
-    main#contact .contact-form textarea {
-      font-size: 1rem;
-      width: 98%; }
-    main#contact .contact-form button[type="submit"] {
-      font-size: 1rem; }
-  main#contact .boxes {
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 100%; } }
+  main#contact {
+    padding: 1rem 1rem 2rem 1rem; }
+    main#contact .lg-heading {
+      line-height: 1;
+      margin-bottom: 0rem;
+      margin-top: 10vh;
+      font-size: 4.03rem; }
+    main#contact .sm-heading {
+      font-size: 1.6rem;
+      margin-top: 0.1rem;
+      margin-bottom: 1.6rem;
+      margin-left: 0.5rem;
+      text-align: left; }
+    main#contact div.flex {
+      flex-direction: column;
+      padding-top: 1rem; }
+      main#contact div.flex .contact-form {
+        width: 85%;
+        padding: 1.5rem 12px 12px 12px;
+        text-align: center; }
+        main#contact div.flex .contact-form i.fa {
+          display: inline-block;
+          text-align: center;
+          font-size: 1.7rem;
+          margin: 0.1rem 0 1.5rem 0; }
+        main#contact div.flex .contact-form input {
+          display: inline-block;
+          font-size: 0.9rem;
+          padding: 0.3rem;
+          width: 42%;
+          margin: auto;
+          margin-bottom: 14px; }
+        main#contact div.flex .contact-form input[id="name"] {
+          margin-right: 1rem; }
+        main#contact div.flex .contact-form textarea {
+          font-size: 0.9rem;
+          width: 88%;
+          margin: auto;
+          margin-top: 0rem; }
+        main#contact div.flex .contact-form button[type="submit"] {
+          font-size: 0.9rem;
+          margin-left: 0; }
+          main#contact div.flex .contact-form button[type="submit"] i.fa {
+            font-size: 0.9rem;
+            padding-right: 0.2rem;
+            margin: 0; }
+      main#contact div.flex .boxes {
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 60%;
+        margin-left: 0.4rem;
+        margin-top: 0.6rem; }
+        main#contact div.flex .boxes div.connect {
+          font-size: 0.8rem;
+          padding: 0.5rem 0.7rem;
+          margin-top: 1rem; }
+        main#contact div.flex .boxes div.icons {
+          margin-top: 1rem; }
+          main#contact div.flex .boxes div.icons i.fa {
+            font-size: 1em; } }
 
 @media screen and (max-height: 510px) {
   main#home .boxes {
@@ -651,7 +741,7 @@
   main#work .projects {
     grid-template-columns: 1fr; }
   main#contact {
-    padding: 1rem 2rem 2rem 2rem; }
+    padding: 1rem 0.8rem 2rem 0.8rem; }
     main#contact .lg-heading {
       margin-top: 12vh;
       font-size: 3rem;
@@ -667,27 +757,36 @@
     main#contact .boxes div {
       font-size: 18px; }
     main#contact div.flex {
-      flex-direction: column; }
+      flex-direction: column;
+      padding-top: 2rem; }
       main#contact div.flex .contact-form {
         width: 100%;
-        text-align: center; }
+        text-align: center;
+        padding: 1px;
+        padding: 1rem; }
         main#contact div.flex .contact-form i.fa {
-          font-size: 1.5rem; }
+          font-size: 1rem; }
         main#contact div.flex .contact-form input {
-          display: block;
-          width: 70%;
-          margin: 25px 0 25px 0;
-          font-size: 1rem; }
+          display: inline-block;
+          width: 47%;
+          margin: auto;
+          margin-bottom: 1rem;
+          font-size: 0.8rem;
+          padding: 0.3rem; }
         main#contact div.flex .contact-form textarea {
-          width: 100%;
-          margin-left: 0;
-          font-size: 1rem; }
+          width: 95%;
+          margin: auto;
+          font-size: 0.9rem; }
         main#contact div.flex .contact-form button[type="submit"] {
-          font-size: 1.1rem;
-          margin-bottom: 1rem; }
+          font-size: 0.8rem;
+          margin-left: 0; }
       main#contact div.flex div.boxes {
         width: 100%;
-        margin-top: 3rem; }
+        margin-top: 1rem; }
+        main#contact div.flex div.boxes .connect {
+          font-size: 0.8rem; }
+          main#contact div.flex div.boxes .connect a {
+            display: block; }
         main#contact div.flex div.boxes .icons.fa {
           font-size: 1.2em; }
     main#contact main#maintenance h1 {
@@ -699,11 +798,6 @@
     main#contact main#maintenance a {
       font-size: medium;
       margin-right: 0; }
-    main#contact main#maintenance .connect {
-      margin-top: 4rem; }
-      main#contact main#maintenance .connect a {
-        display: block;
-        line-height: 3rem; }
     main#contact main#maintenance h4 {
       font-size: 12px;
       margin-top: 0; } }
@@ -711,10 +805,10 @@
 @media screen and (max-width: 369px) {
   .menu-btn {
     right: 14px;
-    top: 19px; }
+    top: 20px; }
     .menu-btn .btn-line {
       width: 32px;
-      height: 4px;
+      height: 3px;
       margin: 0 0 4px 0; }
   h1.logo {
     font-size: 1.8rem !important;
@@ -828,28 +922,49 @@
   main#contact {
     padding: 1rem 1.5rem 2rem 1.5rem; }
     main#contact .lg-heading {
-      margin-top: 10vh;
+      margin-top: 12vh;
       font-size: 3rem;
       margin-left: 0;
       margin-bottom: 8px;
       line-height: 1; }
     main#contact .sm-heading {
-      font-size: 18px;
+      font-size: 17px;
       margin-top: 0;
-      margin-bottom: 4rem;
-      margin-left: 0rem;
+      margin-bottom: 1rem;
+      margin-left: 6px;
       text-align: left;
       line-height: 1; }
-    main#contact .boxes div {
+    main#contact div.flex .contact-form {
+      padding: 8px; }
+      main#contact div.flex .contact-form i.fa {
+        display: inline-block;
+        text-align: center;
+        font-size: 1rem; }
+      main#contact div.flex .contact-form button[type="submit"] {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+        padding: 0.6rem; }
+      main#contact div.flex .contact-form input {
+        display: inline-block;
+        width: 90%;
+        margin: 10px 0 !important;
+        padding: 0.5rem;
+        font-size: 0.87rem; }
+      main#contact div.flex .contact-form textarea {
+        width: 91%;
+        margin-top: 1rem;
+        margin-left: 10px;
+        padding: 8px;
+        font-size: 0.98; }
+    main#contact div.flex div.boxes {
       text-align: center;
-      margin-top: 3rem;
-      padding: 0.5rem 1.1rem;
-      font-size: 15px;
-      margin-top: 2rem; }
-    main#contact .contact-form i.fa {
-      display: block;
-      text-align: center;
-      font-size: 1.5rem; }
+      margin-top: 2rem;
+      font-size: 13px; }
+      main#contact div.flex div.boxes div.connect {
+        font-size: 13px;
+        margin-top: 1rem; }
+      main#contact div.flex div.boxes div.icons i.fa {
+        font-size: 15px; }
   main#maintenance h1 {
     font-size: 15px;
     font-weight: 500;
@@ -1158,18 +1273,20 @@ div.flex {
   align-items: center; }
 
 .contact-form {
+  background-color: #f2aa4cd6;
   float: left;
   flex-basis: 70%;
-  border: 1.5px solid #fff !important;
   padding: 13px; }
   .contact-form input {
     margin: 10px;
-    border: 0px;
-    background-color: #101820ff;
-    color: #fff;
-    border-bottom: 1.5px solid #fff;
+    background-color: #fff;
+    color: #000;
+    border: 1.5px solid #767676;
     font-size: 1.5rem;
     font-weight: 200; }
+  .contact-form input:focus-visible {
+    outline: 1.8px solid #f2aa4cff;
+    border: 0; }
   .contact-form input[id="name"] {
     margin-right: 2rem; }
   .contact-form input[id="name"],
@@ -1179,29 +1296,35 @@ div.flex {
     display: block; }
   .contact-form textarea {
     display: block;
+    font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
     width: 64%;
     margin-left: 10px;
     margin-top: 2rem;
     padding: 10px;
-    background-color: #101820ff;
-    color: #fff;
-    border: 1.5px solid #fff;
+    color: #000;
+    border: 1.5px solid #767676;
     font-size: 1.5rem; }
+  .contact-form textarea:focus-visible {
+    outline: 1.8px solid #f2aa4cff;
+    border: 0; }
 
 main#contact .icons {
   position: relative;
   margin-top: 2rem; }
   main#contact .icons .fa {
-    font-size: 1.4em; }
+    font-size: 1.4em;
+    margin: 0 !important;
+    margin-right: 0.5rem !important; }
 
 main#contact button[type="submit"] {
   font-size: 1.3rem;
   color: #fff;
   background-color: #101820ff;
-  border: 1px #fff solid;
+  border: 1px #767676 solid;
   cursor: pointer;
-  padding: 0.5rem 1.5rem;
-  margin-top: 2rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 0.1rem;
   margin-left: 0.8rem;
   transition: all 0.5s ease-out; }
@@ -1209,7 +1332,8 @@ main#contact button[type="submit"] {
     border-radius: 35px;
     transition: all 0.5s ease-out;
     background: #f2aa4cff;
-    color: #000; }
+    color: #000;
+    border-color: #fff; }
     main#contact button[type="submit"]:hover span {
       color: #000; }
     main#contact button[type="submit"]:hover i.fa {

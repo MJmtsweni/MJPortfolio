@@ -358,19 +358,22 @@ div.flex {
   align-items: center;
 }
 .contact-form {
+  background-color: #f2aa4cd6;
   float: left;
   flex-basis: 70%;
-  border: 1.5px solid #fff !important;
   padding: 13px;
 
   input {
     margin: 10px;
-    border: 0px;
-    background-color: #101820ff;
-    color: #fff;
-    border-bottom: 1.5px solid #fff;
+    background-color: #fff;
+    color: #000;
+    border: 1.5px solid #767676;
     font-size: 1.5rem;
     font-weight: 200;
+  }
+  input:focus-visible {
+    outline: 1.8px solid $secondary-color;
+    border: 0;
   }
   input[id="name"] {
     margin-right: 2rem;
@@ -384,14 +387,19 @@ div.flex {
   }
   textarea {
     display: block;
+    font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
     width: 64%;
     margin-left: 10px;
     margin-top: 2rem;
     padding: 10px;
-    background-color: #101820ff;
-    color: #fff;
-    border: 1.5px solid #fff;
+    color: #000;
+    border: 1.5px solid #767676;
     font-size: 1.5rem;
+  }
+  textarea:focus-visible {
+    outline: 1.8px solid $secondary-color;
+    border: 0;
   }
 }
 main#contact {
@@ -400,17 +408,18 @@ main#contact {
     margin-top: 2rem;
     .fa {
       font-size: 1.4em;
+      margin: 0 !important;
+      margin-right: 0.5rem !important;
     }
   }
   button[type="submit"] {
     font-size: 1.3rem;
     color: #fff;
     background-color: #101820ff;
-
-    border: 1px #fff solid;
+    border: 1px #767676 solid;
     cursor: pointer;
-    padding: 0.5rem 1.5rem;
-    margin-top: 2rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
     margin-bottom: 0.1rem;
     margin-left: 0.8rem;
     @include easeOut;
@@ -420,6 +429,7 @@ main#contact {
       @include easeOut;
       background: $secondary-color;
       color: set-text-color($secondary-color);
+      border-color: #fff;
       span {
         color: set-text-color($secondary-color);
       }
