@@ -719,11 +719,11 @@
   main#about .float {
     width: 49px;
     height: 49px;
-    font-size: 38px; }
+    font-size: 35px; }
   main#about .my-float {
-    left: 8px;
+    left: 10px;
     right: 11px;
-    top: 5px; }
+    top: 7px; }
   main#about .skills {
     display: flex;
     flex-basis: 50%;
@@ -765,11 +765,11 @@
   main#work .float {
     width: 49px;
     height: 49px;
-    font-size: 38px; }
+    font-size: 35px; }
   main#work .my-float {
-    left: 8px;
+    left: 10px;
     right: 11px;
-    top: 5px; }
+    top: 7px; }
   main#work .projects {
     grid-template-columns: 1fr; }
   main#contact {
@@ -912,11 +912,11 @@
   main#about .float {
     width: 49px;
     height: 49px;
-    font-size: 38px; }
+    font-size: 35px; }
   main#about .my-float {
-    left: 8px;
+    left: 10px;
     right: 11px;
-    top: 5px; }
+    top: 7px; }
   main#about .skills {
     display: flex;
     flex-basis: 100%;
@@ -954,11 +954,11 @@
   main#work .float {
     width: 49px;
     height: 49px;
-    font-size: 38px; }
+    font-size: 35px; }
   main#work .my-float {
-    left: 8px;
+    left: 10px;
     right: 11px;
-    top: 5px; }
+    top: 7px; }
   main#contact {
     padding: 1rem 1.5rem 2rem 1.5rem; }
     main#contact .lg-heading {
