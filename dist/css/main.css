@@ -543,6 +543,14 @@
     width: 431px; }
     main#about .bio h3.txt-secondary {
       margin-bottom: -1rem; }
+  main#about .float {
+    width: 58px;
+    height: 58px;
+    font-size: 47px; }
+  main#about .my-float {
+    left: 10px;
+    right: 11px;
+    top: 5px; }
   main#about .skills {
     display: flex;
     flex-basis: 33.3%;
@@ -563,6 +571,14 @@
     margin-bottom: 4rem;
     margin-left: 0rem;
     text-align: left; }
+  main#work .float {
+    width: 58px;
+    height: 58px;
+    font-size: 47px; }
+  main#work .my-float {
+    left: 10px;
+    right: 11px;
+    top: 5px; }
   main#work .projects {
     grid-template-columns: repeat(2, 1fr); }
   main#contact {
@@ -700,6 +716,14 @@
     margin-top: 2rem; }
     main#about .bio h3.txt-secondary {
       margin-bottom: -1rem; }
+  main#about .float {
+    width: 49px;
+    height: 49px;
+    font-size: 43px; }
+  main#about .my-float {
+    left: 7px;
+    right: 11px;
+    top: 2px; }
   main#about .skills {
     display: flex;
     flex-basis: 50%;
@@ -738,6 +762,14 @@
     margin-left: 0rem;
     text-align: left;
     line-height: 1; }
+  main#work .float {
+    width: 49px;
+    height: 49px;
+    font-size: 43px; }
+  main#work .my-float {
+    left: 7px;
+    right: 11px;
+    top: 2px; }
   main#work .projects {
     grid-template-columns: 1fr; }
   main#contact {
@@ -877,6 +909,14 @@
     font-size: 3rem;
     padding-bottom: 8px;
     line-height: 1; }
+  main#about .float {
+    width: 49px;
+    height: 49px;
+    font-size: 43px; }
+  main#about .my-float {
+    left: 7px;
+    right: 11px;
+    top: 2px; }
   main#about .skills {
     display: flex;
     flex-basis: 100%;
@@ -912,13 +952,13 @@
   main#work .overlay p {
     font-size: 0.9rem; }
   main#work .float {
-    width: 48px;
-    height: 48px;
-    bottom: 57px;
-    right: 11px;
-    font-size: 31px; }
+    width: 49px;
+    height: 49px;
+    font-size: 43px; }
   main#work .my-float {
-    margin-top: 8px; }
+    left: 7px;
+    right: 11px;
+    top: 2px; }
   main#contact {
     padding: 1rem 1.5rem 2rem 1.5rem; }
     main#contact .lg-heading {
@@ -1278,6 +1318,7 @@ div.flex {
   flex-basis: 70%;
   padding: 13px; }
   .contact-form input {
+    font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 10px;
     background-color: #fff;
     color: #000;
