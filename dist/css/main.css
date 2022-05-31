@@ -39,18 +39,22 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: rgba(8, 11, 15, 0.8);
+    background: rgba(8, 11, 15, 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: rgba(16, 24, 32, 0.9);
+    background: #101820;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
+    .menu-branding h1.logo {
+      position: absolute;
+      top: 10px;
+      left: 14px; }
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
@@ -478,6 +482,10 @@
     .menu-btn .btn-line {
       width: 35px;
       height: 3px; }
+  .menu-branding {
+    height: 44vh !important; }
+    .menu-branding .portrait {
+      margin-top: 5rem; }
   h1.logo {
     font-size: 1.8rem !important;
     top: 10.2px;
@@ -507,6 +515,8 @@
       main#home .tabs .tab-item h3 {
         font-size: 12px;
         font-weight: 400; }
+  ul.menu-nav {
+    height: 60vh; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -668,6 +678,13 @@
     margin-top: 0; } }
 
 @media screen and (max-width: 500px) {
+  .menu-branding {
+    height: 44vh !important; }
+    .menu-branding .portrait {
+      margin-top: 5rem; }
+    .menu-branding h1.logo {
+      font-size: 1.6rem !important;
+      margin-top: 6px; }
   .menu-btn {
     right: 20px;
     top: 25px; }

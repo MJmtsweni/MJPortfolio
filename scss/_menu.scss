@@ -60,7 +60,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: rgba(darken($primary-color, 5), 0.8);
+    background: rgba(darken($primary-color, 5), 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -72,12 +72,17 @@
 
   // Branding Side
   &-branding {
-    background: rgba($primary-color, 0.9);
+    background: rgba($primary-color, 1);
     transform: translate3d(0, 100%, 0);
     @include easeOut;
     //Slide in from bottom
     &.show {
       transform: translate3d(0, 0, 0);
+    }
+    h1.logo {
+      position: absolute;
+      top: 10px;
+      left: 14px;
     }
     .portrait {
       width: 250px;
